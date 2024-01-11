@@ -1,0 +1,33 @@
+configuration:
+  appenders:
+    console:
+      name: "console"
+      target: "System.out"
+      layout:
+        type: "PatternLayout"
+        pattern: "%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"
+
+    file:
+      name: "file"
+      type: "RollingFileAppender"
+      fileName: "/Users/rail/IdeaProjects/SkillSpace_Enterprise/6Gradel-Spring Core/GMarketOnline/GMarketOnline.log"
+      append: true
+      policy:
+        type: "SizeBasedTriggeringPolicy"
+        size: "100MB"
+      strategy:
+        type: "DefaultRolloverStrategy"
+        max: "10"
+      layout:
+        type: "PatternLayout"
+        pattern: "%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"
+      filters:
+        - type: "LevelRangeFilter"
+          minLevel: "ALL"
+
+  loggers:
+    root:
+      level: "debug"
+      appenders:
+        - "console"
+        - "file"
