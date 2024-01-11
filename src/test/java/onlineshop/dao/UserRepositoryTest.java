@@ -9,7 +9,6 @@ import ru.rail.gmarketonline.entity.*;
 import ru.rail.gmarketonline.repository.CartRepository;
 import ru.rail.gmarketonline.repository.ProductRepository;
 import ru.rail.gmarketonline.repository.UserRepository;
-import ru.rail.gmarketonline.util.HibernateUtil;
 
 
 import java.sql.Timestamp;

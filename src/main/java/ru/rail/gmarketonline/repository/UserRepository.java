@@ -6,7 +6,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import ru.rail.gmarketonline.entity.*;
 import ru.rail.gmarketonline.exception.DaoException;
-import ru.rail.gmarketonline.util.HibernateUtil;
 
 import java.util.Optional;
 

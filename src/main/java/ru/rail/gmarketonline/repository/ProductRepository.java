@@ -5,7 +5,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 import ru.rail.gmarketonline.entity.*;
-import ru.rail.gmarketonline.util.HibernateUtil;
 
 
 import java.util.List;

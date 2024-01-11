@@ -4,7 +4,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import ru.rail.gmarketonline.entity.*;
-import ru.rail.gmarketonline.util.HibernateUtil;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;

@@ -1,5 +1,7 @@
 plugins {
     id "io.freefair.lombok" version "8.0.1"
+    id 'org.springframework.boot' version '3.2.1'
+    id 'io.spring.dependency-management' version '1.1.4'
     id 'java'
     id 'war'
 }
@@ -23,6 +25,10 @@ tasks.withType(JavaCompile) {
 }
 
 dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
     compileOnly('jakarta.servlet:jakarta.servlet-api:5.0.0')
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
