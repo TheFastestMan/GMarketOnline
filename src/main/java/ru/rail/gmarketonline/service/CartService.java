@@ -1,24 +1,24 @@
 package ru.rail.gmarketonline.service;
 
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import ru.rail.gmarketonline.dto.ProductDto;
 import ru.rail.gmarketonline.dto.UserDto;
 import ru.rail.gmarketonline.entity.Product;
 import ru.rail.gmarketonline.entity.User;
 import ru.rail.gmarketonline.repository.CartRepository;
 
-
+@Service
 public class CartService {
-    private final static CartService INSTANCE = new CartService();
-    private final ModelMapper modelMapper = new ModelMapper();
+    @Autowired
+    private final ModelMapper modelMapper;
+    @Autowired
+    private final CartRepository cartRepository;
 
-    private CartRepository cartRepository = CartRepository.getInstance();
-
-    private CartService() {
-    }
-
-    public static CartService getInstance() {
-        return INSTANCE;
+    public CartService(ModelMapper modelMapper, CartRepository cartRepository) {
+        this.modelMapper = modelMapper;
+        this.cartRepository = cartRepository;
     }
 
     private Product convertProductDtoToProduct(ProductDto productDto) {

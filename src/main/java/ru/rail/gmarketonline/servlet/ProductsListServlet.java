@@ -8,6 +8,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.SneakyThrows;
 
 import lombok.extern.log4j.Log4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import ru.rail.gmarketonline.dto.ProductDto;
 import ru.rail.gmarketonline.service.ProductService;
 import ru.rail.gmarketonline.util.JspHelper;
@@ -17,9 +19,16 @@ import java.io.IOException;
 import java.util.List;
 
 @Log4j
+@Component
 @WebServlet("/products")
 public class ProductsListServlet extends HttpServlet {
-    private final ProductService productService = ProductService.getInstance();
+
+    @Autowired
+    private final ProductService productService;
+
+    public ProductsListServlet(ProductService productService) {
+        this.productService = productService;
+    }
 
     @SneakyThrows
     @Override

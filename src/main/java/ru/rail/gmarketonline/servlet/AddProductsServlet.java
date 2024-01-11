@@ -5,18 +5,27 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.Cleanup;
 import lombok.extern.java.Log;
 import lombok.extern.log4j.Log4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import ru.rail.gmarketonline.dto.ProductDto;
 import ru.rail.gmarketonline.service.ProductService;
 import ru.rail.gmarketonline.util.JspHelper;
 
 import java.io.IOException;
+
 @Log4j
+@Component
 @WebServlet("/admin/addProducts")
 public class AddProductsServlet extends HttpServlet {
+    @Autowired
+    private final ProductService productService;
 
-    private final ProductService productService = ProductService.getInstance();
+    public AddProductsServlet(ProductService productService) {
+        this.productService = productService;
+    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

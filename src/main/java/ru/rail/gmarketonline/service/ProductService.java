@@ -3,6 +3,8 @@ package ru.rail.gmarketonline.service;
 import jakarta.validation.ConstraintViolationException;
 import jakarta.validation.Validation;
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import ru.rail.gmarketonline.dto.ProductDto;
 import ru.rail.gmarketonline.entity.Product;
 import ru.rail.gmarketonline.repository.ProductRepository;
@@ -11,16 +13,16 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Service
 public class ProductService {
-    private final static ProductService INSTANCE = new ProductService();
-    private ModelMapper modelMapper = new ModelMapper();
-    private ProductRepository productRepository = ProductRepository.getInstance();
+    @Autowired
+    private final ModelMapper modelMapper;
+    @Autowired
+    private final ProductRepository productRepository;
 
-    public static ProductService getInstance() {
-        return INSTANCE;
-    }
-
-    private ProductService() {
+    public ProductService(ModelMapper modelMapper, ProductRepository productRepository) {
+        this.modelMapper = modelMapper;
+        this.productRepository = productRepository;
     }
 
     private ProductDto convertProductToProductDto(Product product) {

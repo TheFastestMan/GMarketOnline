@@ -3,6 +3,8 @@ package ru.rail.gmarketonline.service;
 import jakarta.validation.ConstraintViolationException;
 import jakarta.validation.Validation;
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import ru.rail.gmarketonline.dto.UserDto;
 import ru.rail.gmarketonline.entity.User;
 import ru.rail.gmarketonline.repository.UserRepository;
@@ -10,18 +12,16 @@ import ru.rail.gmarketonline.repository.UserRepository;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-
+@Service
 public class UserService {
+    @Autowired
+    private final UserRepository userRepository;
+    @Autowired
+    private final ModelMapper modelMapper;
 
-    private final static UserService INSTANCE = new UserService();
-    private final UserRepository userRepository = UserRepository.getInstance();
-    private final ModelMapper modelMapper = new ModelMapper();
-
-    private UserService() {
-    }
-
-    public static UserService getInstance() {
-        return INSTANCE;
+    public UserService(UserRepository userRepository, ModelMapper modelMapper) {
+        this.userRepository = userRepository;
+        this.modelMapper = modelMapper;
     }
 
     private User convertUserDtoToUser(UserDto userDto) {

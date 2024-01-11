@@ -6,6 +6,8 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.log4j.Log4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import ru.rail.gmarketonline.dto.ProductDto;
 import ru.rail.gmarketonline.dto.UserDto;
 import ru.rail.gmarketonline.service.CartService;
@@ -16,11 +18,18 @@ import java.io.IOException;
 import java.util.Optional;
 
 @Log4j
+@Component
 @WebServlet("/addToCart")
 public class AddToCartServlet extends HttpServlet {
-    private final ProductService productService = ProductService.getInstance();
-    private final CartService cartService = CartService.getInstance();
+    @Autowired
+    private final ProductService productService;
+    @Autowired
+    private final CartService cartService;
 
+    public AddToCartServlet(ProductService productService, CartService cartService) {
+        this.productService = productService;
+        this.cartService = cartService;
+    }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
