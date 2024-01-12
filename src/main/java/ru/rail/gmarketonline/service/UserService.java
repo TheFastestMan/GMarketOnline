@@ -2,7 +2,6 @@ package ru.rail.gmarketonline.service;
 
 import jakarta.validation.ConstraintViolationException;
 import jakarta.validation.Validation;
-import lombok.extern.java.Log;
 import lombok.extern.log4j.Log4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
