@@ -28,6 +28,8 @@ public class UserServiceIT {
     private UserRepository userRepository;
 
     // Additional setup methods if needed
+    // Additional setup methods if needed
+    // Additional setup methods if needed
 
     @BeforeEach
     public void setUp() {
