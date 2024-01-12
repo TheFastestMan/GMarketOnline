@@ -1,0 +1,1389 @@
+2024 -01-11 16:09:49 DEBUG logging:29 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2024 -01-11 16:09:49 DEBUG IntegratorServiceImpl:45 - Adding Integrator [org.hibernate.boot.beanvalidation.BeanValidationIntegrator].
+2024 -01-11 16:09:49 DEBUG IntegratorServiceImpl:45 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2024 -01-11 16:09:50 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.2.6.Final
+2024 -01-11 16:09:50 DEBUG Environment:174 - HHH000206: hibernate.properties not found
+2024 -01-11 16:09:50 INFO  Environment:191 - HHH000406: Using bytecode reflection optimizer
+2024 -01-11 16:09:50 DEBUG LocalXmlResourceResolver:86 - Checking public/system identifiers `-//Hibernate/Hibernate Configuration DTD//EN`/`http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd` as DTD references
+2024 -01-11 16:09:50 DEBUG JaxbCfgProcessor:115 - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+2024 -01-11 16:09:51 DEBUG Configuration:956 - Building session factory using internal StandardServiceRegistryBuilder
+2024 -01-11 16:09:51 DEBUG Configuration:858 - Building session factory using provided StandardServiceRegistry
+2024 -01-11 16:09:51 DEBUG factory:94 - Ignoring CDI for resolving IdentifierGenerator instances as extended or delayed CDI support was enabled
+2024 -01-11 16:09:51 DEBUG factory:170 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2024 -01-11 16:09:51 DEBUG factory:170 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2024 -01-11 16:09:51 DEBUG factory:170 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2024 -01-11 16:09:51 DEBUG factory:170 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2024 -01-11 16:09:51 DEBUG factory:170 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2024 -01-11 16:09:51 DEBUG factory:170 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2024 -01-11 16:09:51 DEBUG factory:170 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2024 -01-11 16:09:51 DEBUG factory:170 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2024 -01-11 16:09:51 DEBUG factory:170 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2024 -01-11 16:09:51 DEBUG factory:170 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2024 -01-11 16:09:51 DEBUG factory:170 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2024 -01-11 16:09:51 DEBUG factory:170 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2024 -01-11 16:09:51 DEBUG RegionFactoryInitiator:117 - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024 -01-11 16:09:51 DEBUG RegionFactoryInitiator:49 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration boolean -> org.hibernate.type.BasicTypeReference@7f3f2f5b
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration boolean -> org.hibernate.type.BasicTypeReference@7f3f2f5b
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@7f3f2f5b
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@2aebf72b
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@2aebf72b
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration true_false -> org.hibernate.type.BasicTypeReference@175c7c6a
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@175c7c6a
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@1096ae32
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@1096ae32
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration byte -> org.hibernate.type.BasicTypeReference@16d51e8c
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration byte -> org.hibernate.type.BasicTypeReference@16d51e8c
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@16d51e8c
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration binary -> org.hibernate.type.BasicTypeReference@63f2e1d2
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@63f2e1d2
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration [B -> org.hibernate.type.BasicTypeReference@63f2e1d2
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@17b97eea
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@17b97eea
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration image -> org.hibernate.type.BasicTypeReference@32fbb511
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration blob -> org.hibernate.type.BasicTypeReference@c64ecbc
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@c64ecbc
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@786c7093
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@247e1f5a
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration short -> org.hibernate.type.BasicTypeReference@4bc275f9
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration short -> org.hibernate.type.BasicTypeReference@4bc275f9
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@4bc275f9
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration integer -> org.hibernate.type.BasicTypeReference@60686131
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration int -> org.hibernate.type.BasicTypeReference@60686131
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@60686131
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration long -> org.hibernate.type.BasicTypeReference@7b9b6d47
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration long -> org.hibernate.type.BasicTypeReference@7b9b6d47
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@7b9b6d47
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration float -> org.hibernate.type.BasicTypeReference@2fcb29a1
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration float -> org.hibernate.type.BasicTypeReference@2fcb29a1
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@2fcb29a1
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration double -> org.hibernate.type.BasicTypeReference@777eec1c
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration double -> org.hibernate.type.BasicTypeReference@777eec1c
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@777eec1c
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@543c6a2b
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@543c6a2b
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@746dc4be
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@746dc4be
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration character -> org.hibernate.type.BasicTypeReference@21d7db3
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration char -> org.hibernate.type.BasicTypeReference@21d7db3
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@21d7db3
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@2836fe0
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration string -> org.hibernate.type.BasicTypeReference@355920a9
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@355920a9
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration nstring -> org.hibernate.type.BasicTypeReference@2f8b5a88
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration characters -> org.hibernate.type.BasicTypeReference@46925a2f
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration char[] -> org.hibernate.type.BasicTypeReference@46925a2f
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration [C -> org.hibernate.type.BasicTypeReference@46925a2f
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@5ff7c172
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration text -> org.hibernate.type.BasicTypeReference@2357ee4d
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration ntext -> org.hibernate.type.BasicTypeReference@56fdafb5
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration clob -> org.hibernate.type.BasicTypeReference@26ad467
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@26ad467
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration nclob -> org.hibernate.type.BasicTypeReference@63f77909
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@63f77909
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@7f4ed6bc
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@44f54ee7
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@106873f2
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@488f6fc7
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@41fdab5c
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@2f1147f2
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration Duration -> org.hibernate.type.BasicTypeReference@7c354601
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@7c354601
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@4ff7ef17
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@4ff7ef17
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@637c0afe
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@637c0afe
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@4677ffb4
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@4677ffb4
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@10a4bc35
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@10a4bc35
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@60db7661
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@6373ab7e
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@1a0062fb
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@1a0062fb
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@2ff0309a
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@1423337b
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@6a7542da
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@737be2d5
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@737be2d5
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@5d2178c0
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@509420f4
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration date -> org.hibernate.type.BasicTypeReference@1037dbae
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@1037dbae
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration time -> org.hibernate.type.BasicTypeReference@3cf6ee37
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@3cf6ee37
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@6a477611
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@6a477611
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@6a477611
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration calendar -> org.hibernate.type.BasicTypeReference@1b25682d
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@1b25682d
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@1b25682d
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@35e13a4c
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@3eedfd91
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration instant -> org.hibernate.type.BasicTypeReference@6f4bf3a3
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@6f4bf3a3
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration uuid -> org.hibernate.type.BasicTypeReference@5f9f9a67
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@5f9f9a67
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@5f9f9a67
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@6310e882
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@32409004
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration class -> org.hibernate.type.BasicTypeReference@2a6ab04
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@2a6ab04
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration currency -> org.hibernate.type.BasicTypeReference@21c94595
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration Currency -> org.hibernate.type.BasicTypeReference@21c94595
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@21c94595
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration locale -> org.hibernate.type.BasicTypeReference@4579edd6
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@4579edd6
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration serializable -> org.hibernate.type.BasicTypeReference@738f85cd
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@738f85cd
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration timezone -> org.hibernate.type.BasicTypeReference@4446ee33
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@4446ee33
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@2fc8fec3
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@2fc8fec3
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration url -> org.hibernate.type.BasicTypeReference@25d5a1b1
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@25d5a1b1
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration row_version -> org.hibernate.type.BasicTypeReference@2afbf92b
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:385 - Adding type registration object -> org.hibernate.type.JavaObjectType@67c29cc7
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:385 - Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@67c29cc7
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:385 - Adding type registration null -> org.hibernate.type.NullType@7e1d439a
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@228efbd2
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@6332e693
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@c8ffc41
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@189a7fd9
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@4d1f5773
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@39ed263d
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@4a73a8b5
+2024 -01-11 16:09:51 DEBUG BasicTypeRegistry:410 - Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@15c7295
+2024 -01-11 16:09:51 WARN  pooling:80 - HHH10001002: Using built-in connection pool (not intended for production use)
+2024 -01-11 16:09:51 INFO  pooling:139 - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024 -01-11 16:09:51 INFO  pooling:161 - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/g_market_online]
+2024 -01-11 16:09:51 INFO  pooling:167 - HHH10001001: Connection properties: {password=postgres, autocommit=true, user=postgres}
+2024 -01-11 16:09:51 INFO  pooling:174 - HHH10001003: Autocommit mode: true
+2024 -01-11 16:09:52 DEBUG pooling:358 - Initializing Connection pool with 1 Connections
+2024 -01-11 16:09:52 INFO  pooling:366 - HHH10001115: Connection pool size: 20 (min=1)
+2024 -01-11 16:09:52 DEBUG JdbcEnvironmentInitiator:156 - Database ->
+       name : PostgreSQL
+    version : 15.2
+      major : 15
+      minor : 2
+2024 -01-11 16:09:52 DEBUG JdbcEnvironmentInitiator:167 - Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.2.18
+      major : 42
+      minor : 2
+2024 -01-11 16:09:52 DEBUG JdbcEnvironmentInitiator:389 - JDBC version : 4.2
+2024 -01-11 16:09:52 DEBUG dialect:93 - HHH035001: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect, version: 10.0
+2024 -01-11 16:09:52 WARN  deprecation:100 - HHH90000026: PostgreSQL10Dialect has been deprecated; use org.hibernate.dialect.PostgreSQLDialect instead
+2024 -01-11 16:09:52 DEBUG IdentifierHelperBuilder:116 - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2024 -01-11 16:09:53 DEBUG lob:61 - HHH10010004: Disabling contextual LOB creation as Dialect reported it is not supported
+2024 -01-11 16:09:53 DEBUG DdlTypeRegistry:63 - addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@736c31e7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1c8cc983)
+2024 -01-11 16:09:53 DEBUG JdbcTypeRegistry:64 - addDescriptor(2004, BlobTypeDescriptor(BLOB_BINDING)) replaced previous registration(BlobTypeDescriptor(DEFAULT))
+2024 -01-11 16:09:53 DEBUG JdbcTypeRegistry:64 - addDescriptor(2005, ClobTypeDescriptor(CLOB_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2024 -01-11 16:09:53 DEBUG BasicTypeRegistry:385 - Adding type registration JAVA_OBJECT -> org.hibernate.type.JavaObjectType@3d3a515a
+2024 -01-11 16:09:53 DEBUG BasicTypeRegistry:385 - Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@3d3a515a
+2024 -01-11 16:09:53 DEBUG BasicTypeRegistry:389 - Type registration key [java.lang.Object] overrode previous entry : `org.hibernate.type.JavaObjectType@67c29cc7`
+2024 -01-11 16:09:53 DEBUG JdbcTypeRegistry:64 - addDescriptor(3100, NumericTypeDescriptor) replaced previous registration(org.hibernate.dialect.PostgreSQLIntervalSecondJdbcType@74da075e)
+2024 -01-11 16:09:53 DEBUG BasicTypeRegistry:385 - Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@1(java.time.OffsetDateTime,3003)
+2024 -01-11 16:09:53 DEBUG BasicTypeRegistry:385 - Adding type registration OffsetDateTime -> basicType@1(java.time.OffsetDateTime,3003)
+2024 -01-11 16:09:53 DEBUG BasicTypeRegistry:385 - Adding type registration java.time.OffsetDateTime -> basicType@1(java.time.OffsetDateTime,3003)
+2024 -01-11 16:09:53 DEBUG BasicTypeRegistry:385 - Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@2(java.time.ZonedDateTime,3003)
+2024 -01-11 16:09:53 DEBUG BasicTypeRegistry:385 - Adding type registration ZonedDateTime -> basicType@2(java.time.ZonedDateTime,3003)
+2024 -01-11 16:09:53 DEBUG BasicTypeRegistry:385 - Adding type registration java.time.ZonedDateTime -> basicType@2(java.time.ZonedDateTime,3003)
+2024 -01-11 16:09:53 DEBUG BasicTypeRegistry:385 - Adding type registration org.hibernate.type.OffsetTimeType -> basicType@3(java.time.OffsetTime,3007)
+2024 -01-11 16:09:53 DEBUG BasicTypeRegistry:385 - Adding type registration OffsetTime -> basicType@3(java.time.OffsetTime,3007)
+2024 -01-11 16:09:53 DEBUG BasicTypeRegistry:385 - Adding type registration java.time.OffsetTime -> basicType@3(java.time.OffsetTime,3007)
+2024 -01-11 16:09:53 DEBUG TypeConfiguration$Scope:191 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@a31b64b] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3a9d8201]
+2024 -01-11 16:09:53 DEBUG Namespace:64 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2024 -01-11 16:09:53 DEBUG EntityBinder:206 - Binding entity from annotated class: ru.rail.gmarketonline.entity.User
+2024 -01-11 16:09:53 DEBUG EntityBinder:1224 - Import with entity name User
+2024 -01-11 16:09:53 DEBUG EntityBinder:1769 - Bind entity ru.rail.gmarketonline.entity.User on table users
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn(column='user_id')
+2024 -01-11 16:09:54 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [ru.rail.gmarketonline.entity.User] is safe
+2024 -01-11 16:09:54 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.rail.gmarketonline.entity.User
+2024 -01-11 16:09:54 DEBUG PropertyBinder:248 - MetadataSourceProcessor property id with lazy=false
+2024 -01-11 16:09:54 DEBUG AbstractPropertyHolder:107 - Attempting to locate auto-apply AttributeConverter for property [ru.rail.gmarketonline.entity.User:id]
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1196 - building BasicValue for id
+2024 -01-11 16:09:54 DEBUG BasicValue:259 - Skipping column re-registration: users.user_id
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property id
+2024 -01-11 16:09:54 DEBUG BinderHelper:73 - #makeIdGenerator(BasicValue([Column(user_id)]), id, identity, , ...)
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn()
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn()
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: IndexColumn(column='carts_ORDER')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn()
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn(column='carts_KEY')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn(column='carts_KEY')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn()
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn()
+2024 -01-11 16:09:54 DEBUG CollectionBinder:1137 - Collection role: ru.rail.gmarketonline.entity.User.carts
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property carts
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn()
+2024 -01-11 16:09:54 DEBUG PropertyBinder:248 - MetadataSourceProcessor property email with lazy=false
+2024 -01-11 16:09:54 DEBUG AbstractPropertyHolder:107 - Attempting to locate auto-apply AttributeConverter for property [ru.rail.gmarketonline.entity.User:email]
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1196 - building BasicValue for email
+2024 -01-11 16:09:54 DEBUG BasicValue:259 - Skipping column re-registration: users.email
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property email
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn()
+2024 -01-11 16:09:54 DEBUG PropertyBinder:248 - MetadataSourceProcessor property gender with lazy=false
+2024 -01-11 16:09:54 DEBUG AbstractPropertyHolder:107 - Attempting to locate auto-apply AttributeConverter for property [ru.rail.gmarketonline.entity.User:gender]
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1196 - building BasicValue for gender
+2024 -01-11 16:09:54 DEBUG BasicValue:259 - Skipping column re-registration: users.gender
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property gender
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn()
+2024 -01-11 16:09:54 DEBUG PropertyBinder:248 - MetadataSourceProcessor property password with lazy=false
+2024 -01-11 16:09:54 DEBUG AbstractPropertyHolder:107 - Attempting to locate auto-apply AttributeConverter for property [ru.rail.gmarketonline.entity.User:password]
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1196 - building BasicValue for password
+2024 -01-11 16:09:54 DEBUG BasicValue:259 - Skipping column re-registration: users.password
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property password
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn()
+2024 -01-11 16:09:54 DEBUG PropertyBinder:248 - MetadataSourceProcessor property role with lazy=false
+2024 -01-11 16:09:54 DEBUG AbstractPropertyHolder:107 - Attempting to locate auto-apply AttributeConverter for property [ru.rail.gmarketonline.entity.User:role]
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1196 - building BasicValue for role
+2024 -01-11 16:09:54 DEBUG BasicValue:259 - Skipping column re-registration: users.role
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property role
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn()
+2024 -01-11 16:09:54 DEBUG PropertyBinder:248 - MetadataSourceProcessor property username with lazy=false
+2024 -01-11 16:09:54 DEBUG AbstractPropertyHolder:107 - Attempting to locate auto-apply AttributeConverter for property [ru.rail.gmarketonline.entity.User:username]
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1196 - building BasicValue for username
+2024 -01-11 16:09:54 DEBUG BasicValue:259 - Skipping column re-registration: users.username
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property username
+2024 -01-11 16:09:54 DEBUG EntityBinder:206 - Binding entity from annotated class: ru.rail.gmarketonline.entity.Cart
+2024 -01-11 16:09:54 DEBUG EntityBinder:1224 - Import with entity name Cart
+2024 -01-11 16:09:54 DEBUG EntityBinder:1769 - Bind entity ru.rail.gmarketonline.entity.Cart on table carts
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn(column='cart_id')
+2024 -01-11 16:09:54 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [ru.rail.gmarketonline.entity.Cart] is safe
+2024 -01-11 16:09:54 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.rail.gmarketonline.entity.Cart
+2024 -01-11 16:09:54 DEBUG PropertyBinder:248 - MetadataSourceProcessor property id with lazy=false
+2024 -01-11 16:09:54 DEBUG AbstractPropertyHolder:107 - Attempting to locate auto-apply AttributeConverter for property [ru.rail.gmarketonline.entity.Cart:id]
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1196 - building BasicValue for id
+2024 -01-11 16:09:54 DEBUG BasicValue:259 - Skipping column re-registration: carts.cart_id
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property id
+2024 -01-11 16:09:54 DEBUG BinderHelper:73 - #makeIdGenerator(BasicValue([Column(cart_id)]), id, identity, , ...)
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn()
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn()
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: IndexColumn(column='cartItems_ORDER')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn()
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn(column='cartItems_KEY')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn(column='cartItems_KEY')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn()
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn()
+2024 -01-11 16:09:54 DEBUG CollectionBinder:1137 - Collection role: ru.rail.gmarketonline.entity.Cart.cartItems
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property cartItems
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn(column='created_at')
+2024 -01-11 16:09:54 DEBUG PropertyBinder:248 - MetadataSourceProcessor property createdAt with lazy=false
+2024 -01-11 16:09:54 DEBUG AbstractPropertyHolder:107 - Attempting to locate auto-apply AttributeConverter for property [ru.rail.gmarketonline.entity.Cart:createdAt]
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1196 - building BasicValue for createdAt
+2024 -01-11 16:09:54 DEBUG BasicValue:259 - Skipping column re-registration: carts.created_at
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property createdAt
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn(column='user_id',referencedColumn='user_id')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn()
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property user
+2024 -01-11 16:09:54 DEBUG EntityBinder:206 - Binding entity from annotated class: ru.rail.gmarketonline.entity.CartItem
+2024 -01-11 16:09:54 DEBUG EntityBinder:1224 - Import with entity name CartItem
+2024 -01-11 16:09:54 DEBUG EntityBinder:1769 - Bind entity ru.rail.gmarketonline.entity.CartItem on table carts_items
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn(column='cart_item_id')
+2024 -01-11 16:09:54 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [ru.rail.gmarketonline.entity.CartItem] is safe
+2024 -01-11 16:09:54 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.rail.gmarketonline.entity.CartItem
+2024 -01-11 16:09:54 DEBUG PropertyBinder:248 - MetadataSourceProcessor property cartItemId with lazy=false
+2024 -01-11 16:09:54 DEBUG AbstractPropertyHolder:107 - Attempting to locate auto-apply AttributeConverter for property [ru.rail.gmarketonline.entity.CartItem:cartItemId]
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1196 - building BasicValue for cartItemId
+2024 -01-11 16:09:54 DEBUG BasicValue:259 - Skipping column re-registration: carts_items.cart_item_id
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property cartItemId
+2024 -01-11 16:09:54 DEBUG BinderHelper:73 - #makeIdGenerator(BasicValue([Column(cart_item_id)]), cartItemId, identity, , ...)
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn(column='cart_id',referencedColumn='cart_id')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn()
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property cart
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn(column='product_id',referencedColumn='product_id')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn()
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property product
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn(column='quantity')
+2024 -01-11 16:09:54 DEBUG PropertyBinder:248 - MetadataSourceProcessor property quantity with lazy=false
+2024 -01-11 16:09:54 DEBUG AbstractPropertyHolder:107 - Attempting to locate auto-apply AttributeConverter for property [ru.rail.gmarketonline.entity.CartItem:quantity]
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1196 - building BasicValue for quantity
+2024 -01-11 16:09:54 DEBUG BasicValue:259 - Skipping column re-registration: carts_items.quantity
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property quantity
+2024 -01-11 16:09:54 DEBUG EntityBinder:206 - Binding entity from annotated class: ru.rail.gmarketonline.entity.Product
+2024 -01-11 16:09:54 DEBUG EntityBinder:1224 - Import with entity name Product
+2024 -01-11 16:09:54 DEBUG EntityBinder:1769 - Bind entity ru.rail.gmarketonline.entity.Product on table products
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn(column='product_id')
+2024 -01-11 16:09:54 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [ru.rail.gmarketonline.entity.Product] is safe
+2024 -01-11 16:09:54 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.rail.gmarketonline.entity.Product
+2024 -01-11 16:09:54 DEBUG PropertyBinder:248 - MetadataSourceProcessor property id with lazy=false
+2024 -01-11 16:09:54 DEBUG AbstractPropertyHolder:107 - Attempting to locate auto-apply AttributeConverter for property [ru.rail.gmarketonline.entity.Product:id]
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1196 - building BasicValue for id
+2024 -01-11 16:09:54 DEBUG BasicValue:259 - Skipping column re-registration: products.product_id
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property id
+2024 -01-11 16:09:54 DEBUG BinderHelper:73 - #makeIdGenerator(BasicValue([Column(product_id)]), id, identity, , ...)
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn()
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn()
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: IndexColumn(column='cartItems_ORDER')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn()
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn(column='cartItems_KEY')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn(column='cartItems_KEY')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn()
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn()
+2024 -01-11 16:09:54 DEBUG CollectionBinder:1137 - Collection role: ru.rail.gmarketonline.entity.Product.cartItems
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property cartItems
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn(column='description')
+2024 -01-11 16:09:54 DEBUG PropertyBinder:248 - MetadataSourceProcessor property description with lazy=false
+2024 -01-11 16:09:54 DEBUG AbstractPropertyHolder:107 - Attempting to locate auto-apply AttributeConverter for property [ru.rail.gmarketonline.entity.Product:description]
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1196 - building BasicValue for description
+2024 -01-11 16:09:54 DEBUG BasicValue:259 - Skipping column re-registration: products.description
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property description
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn(column='price')
+2024 -01-11 16:09:54 DEBUG PropertyBinder:248 - MetadataSourceProcessor property price with lazy=false
+2024 -01-11 16:09:54 DEBUG AbstractPropertyHolder:107 - Attempting to locate auto-apply AttributeConverter for property [ru.rail.gmarketonline.entity.Product:price]
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1196 - building BasicValue for price
+2024 -01-11 16:09:54 DEBUG BasicValue:259 - Skipping column re-registration: products.price
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property price
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn(column='product_name')
+2024 -01-11 16:09:54 DEBUG PropertyBinder:248 - MetadataSourceProcessor property productName with lazy=false
+2024 -01-11 16:09:54 DEBUG AbstractPropertyHolder:107 - Attempting to locate auto-apply AttributeConverter for property [ru.rail.gmarketonline.entity.Product:productName]
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1196 - building BasicValue for productName
+2024 -01-11 16:09:54 DEBUG BasicValue:259 - Skipping column re-registration: products.product_name
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property productName
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn(column='quantity')
+2024 -01-11 16:09:54 DEBUG PropertyBinder:248 - MetadataSourceProcessor property quantity with lazy=false
+2024 -01-11 16:09:54 DEBUG AbstractPropertyHolder:107 - Attempting to locate auto-apply AttributeConverter for property [ru.rail.gmarketonline.entity.Product:quantity]
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1196 - building BasicValue for quantity
+2024 -01-11 16:09:54 DEBUG BasicValue:259 - Skipping column re-registration: products.quantity
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property quantity
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn()
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn()
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: IndexColumn(column='userProducts_ORDER')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn()
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn(column='userProducts_KEY')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn(column='userProducts_KEY')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn()
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn()
+2024 -01-11 16:09:54 DEBUG CollectionBinder:1137 - Collection role: ru.rail.gmarketonline.entity.Product.userProducts
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property userProducts
+2024 -01-11 16:09:54 DEBUG EntityBinder:206 - Binding entity from annotated class: ru.rail.gmarketonline.entity.UserProduct
+2024 -01-11 16:09:54 DEBUG EntityBinder:1224 - Import with entity name UserProduct
+2024 -01-11 16:09:54 DEBUG EntityBinder:1769 - Bind entity ru.rail.gmarketonline.entity.UserProduct on table users_products
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn(column='user_product_id')
+2024 -01-11 16:09:54 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [ru.rail.gmarketonline.entity.UserProduct] is safe
+2024 -01-11 16:09:54 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.rail.gmarketonline.entity.UserProduct
+2024 -01-11 16:09:54 DEBUG PropertyBinder:248 - MetadataSourceProcessor property userProductId with lazy=false
+2024 -01-11 16:09:54 DEBUG AbstractPropertyHolder:107 - Attempting to locate auto-apply AttributeConverter for property [ru.rail.gmarketonline.entity.UserProduct:userProductId]
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1196 - building BasicValue for userProductId
+2024 -01-11 16:09:54 DEBUG BasicValue:259 - Skipping column re-registration: users_products.user_product_id
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property userProductId
+2024 -01-11 16:09:54 DEBUG BinderHelper:73 - #makeIdGenerator(BasicValue([Column(user_product_id)]), userProductId, identity, , ...)
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn(column='product_id',referencedColumn='product_id')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn()
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property product
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedJoinColumn(column='user_id',referencedColumn='user_id')
+2024 -01-11 16:09:54 DEBUG AnnotatedColumn:249 - Binding column: AnnotatedColumn()
+2024 -01-11 16:09:54 DEBUG PropertyBinder:388 - Building property user
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1270 - Starting `BasicValueBinder#fillSimpleValue` for id
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1270 - Starting `BasicValueBinder#fillSimpleValue` for email
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1270 - Starting `BasicValueBinder#fillSimpleValue` for gender
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1270 - Starting `BasicValueBinder#fillSimpleValue` for password
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1270 - Starting `BasicValueBinder#fillSimpleValue` for role
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1270 - Starting `BasicValueBinder#fillSimpleValue` for username
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1270 - Starting `BasicValueBinder#fillSimpleValue` for id
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1270 - Starting `BasicValueBinder#fillSimpleValue` for createdAt
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1270 - Starting `BasicValueBinder#fillSimpleValue` for cartItemId
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1270 - Starting `BasicValueBinder#fillSimpleValue` for quantity
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1270 - Starting `BasicValueBinder#fillSimpleValue` for id
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1270 - Starting `BasicValueBinder#fillSimpleValue` for description
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1270 - Starting `BasicValueBinder#fillSimpleValue` for price
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1270 - Starting `BasicValueBinder#fillSimpleValue` for productName
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1270 - Starting `BasicValueBinder#fillSimpleValue` for quantity
+2024 -01-11 16:09:54 DEBUG BasicValueBinder:1270 - Starting `BasicValueBinder#fillSimpleValue` for userProductId
+2024 -01-11 16:09:54 DEBUG PrimaryKey:40 - Forcing column [user_id] to be non-null as it is part of the primary key for table [users]
+2024 -01-11 16:09:54 DEBUG PrimaryKey:40 - Forcing column [cart_id] to be non-null as it is part of the primary key for table [carts]
+2024 -01-11 16:09:54 DEBUG PrimaryKey:40 - Forcing column [cart_item_id] to be non-null as it is part of the primary key for table [carts_items]
+2024 -01-11 16:09:54 DEBUG PrimaryKey:40 - Forcing column [product_id] to be non-null as it is part of the primary key for table [products]
+2024 -01-11 16:09:54 DEBUG PrimaryKey:40 - Forcing column [user_product_id] to be non-null as it is part of the primary key for table [users_products]
+2024 -01-11 16:09:54 DEBUG CollectionSecondPass:42 - Second pass for collection: ru.rail.gmarketonline.entity.User.carts
+2024 -01-11 16:09:54 DEBUG CollectionBinder:2739 - Binding a OneToMany: ru.rail.gmarketonline.entity.User.carts through a foreign key
+2024 -01-11 16:09:54 DEBUG CollectionBinder:1634 - Mapping collection: ru.rail.gmarketonline.entity.User.carts -> carts
+2024 -01-11 16:09:54 DEBUG TableBinder:762 - Retrieving property ru.rail.gmarketonline.entity.Cart.user
+2024 -01-11 16:09:54 DEBUG CollectionSecondPass:60 - Mapped collection key: user_id, one-to-many: ru.rail.gmarketonline.entity.Cart
+2024 -01-11 16:09:54 DEBUG CollectionSecondPass:42 - Second pass for collection: ru.rail.gmarketonline.entity.Cart.cartItems
+2024 -01-11 16:09:54 DEBUG CollectionBinder:2739 - Binding a OneToMany: ru.rail.gmarketonline.entity.Cart.cartItems through a foreign key
+2024 -01-11 16:09:54 DEBUG CollectionBinder:1634 - Mapping collection: ru.rail.gmarketonline.entity.Cart.cartItems -> carts_items
+2024 -01-11 16:09:54 DEBUG TableBinder:762 - Retrieving property ru.rail.gmarketonline.entity.CartItem.cart
+2024 -01-11 16:09:54 DEBUG CollectionSecondPass:60 - Mapped collection key: cart_id, one-to-many: ru.rail.gmarketonline.entity.CartItem
+2024 -01-11 16:09:54 DEBUG CollectionSecondPass:42 - Second pass for collection: ru.rail.gmarketonline.entity.Product.cartItems
+2024 -01-11 16:09:54 DEBUG CollectionBinder:2739 - Binding a OneToMany: ru.rail.gmarketonline.entity.Product.cartItems through a foreign key
+2024 -01-11 16:09:54 DEBUG CollectionBinder:1634 - Mapping collection: ru.rail.gmarketonline.entity.Product.cartItems -> carts_items
+2024 -01-11 16:09:54 DEBUG TableBinder:762 - Retrieving property ru.rail.gmarketonline.entity.CartItem.product
+2024 -01-11 16:09:54 DEBUG CollectionSecondPass:60 - Mapped collection key: product_id, one-to-many: ru.rail.gmarketonline.entity.CartItem
+2024 -01-11 16:09:54 DEBUG CollectionSecondPass:42 - Second pass for collection: ru.rail.gmarketonline.entity.Product.userProducts
+2024 -01-11 16:09:54 DEBUG CollectionBinder:2739 - Binding a OneToMany: ru.rail.gmarketonline.entity.Product.userProducts through a foreign key
+2024 -01-11 16:09:54 DEBUG CollectionBinder:1634 - Mapping collection: ru.rail.gmarketonline.entity.Product.userProducts -> users_products
+2024 -01-11 16:09:54 DEBUG TableBinder:762 - Retrieving property ru.rail.gmarketonline.entity.UserProduct.product
+2024 -01-11 16:09:54 DEBUG CollectionSecondPass:60 - Mapped collection key: product_id, one-to-many: ru.rail.gmarketonline.entity.UserProduct
+2024 -01-11 16:09:54 DEBUG InFlightMetadataCollectorImpl:1991 - Resolving reference to class: ru.rail.gmarketonline.entity.User
+2024 -01-11 16:09:54 DEBUG InFlightMetadataCollectorImpl:1991 - Resolving reference to class: ru.rail.gmarketonline.entity.Cart
+2024 -01-11 16:09:54 DEBUG InFlightMetadataCollectorImpl:1991 - Resolving reference to class: ru.rail.gmarketonline.entity.Product
+2024 -01-11 16:09:54 DEBUG InFlightMetadataCollectorImpl:1991 - Resolving reference to class: ru.rail.gmarketonline.entity.Product
+2024 -01-11 16:09:54 DEBUG InFlightMetadataCollectorImpl:1991 - Resolving reference to class: ru.rail.gmarketonline.entity.User
+2024 -01-11 16:09:54 DEBUG InFlightMetadataCollectorImpl:1991 - Resolving reference to class: ru.rail.gmarketonline.entity.User
+2024 -01-11 16:09:54 DEBUG InFlightMetadataCollectorImpl:1991 - Resolving reference to class: ru.rail.gmarketonline.entity.Cart
+2024 -01-11 16:09:54 DEBUG InFlightMetadataCollectorImpl:1991 - Resolving reference to class: ru.rail.gmarketonline.entity.Product
+2024 -01-11 16:09:54 DEBUG InFlightMetadataCollectorImpl:1991 - Resolving reference to class: ru.rail.gmarketonline.entity.Product
+2024 -01-11 16:09:54 DEBUG InFlightMetadataCollectorImpl:1991 - Resolving reference to class: ru.rail.gmarketonline.entity.User
+2024 -01-11 16:09:54 INFO  BytecodeProviderInitiator:53 - HHH000021: Bytecode provider name : bytebuddy
+2024 -01-11 16:09:55 DEBUG SessionFactoryImpl:208 - Building session factory
+2024 -01-11 16:09:55 DEBUG SessionFactoryServiceRegistryImpl:91 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2024 -01-11 16:09:55 DEBUG SessionFactoryImpl:225 - Instantiating SessionFactory with settings: {hibernate.format_sql=true, java.specification.version=17, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, java.class.path=/Users/rail/IdeaProjects/SkillSpace_Enterprise/apache-tomcat-10.1.6/bin/bootstrap.jar:/Users/rail/IdeaProjects/SkillSpace_Enterprise/apache-tomcat-10.1.6/bin/tomcat-juli.jar, java.vm.vendor=Amazon.com Inc., sun.arch.data.model=64, java.vendor.url=https://aws.amazon.com/corretto/, catalina.useNaming=true, user.timezone=Asia/Bangkok, org.apache.el.GET_CLASSLOADER_USE_PRIVILEGED=false, java.vm.specification.version=17, os.name=Mac OS X, hibernate.connection.autocommit=true, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/Users/rail/Library/Java/JavaVirtualMachines/corretto-17.0.8/Contents/Home/lib, com.sun.management.jmxremote.ssl=false, sun.java.command=org.apache.catalina.startup.Bootstrap start, com.sun.management.jmxremote=, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, jdk.debug=release, sun.cpu.endian=little, user.home=/Users/rail, user.language=en, java.specification.vendor=Oracle Corporation, java.naming.factory.url.pkgs=org.apache.naming, java.version.date=2023-07-18, java.home=/Users/rail/Library/Java/JavaVirtualMachines/corretto-17.0.8/Contents/Home, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, com.sun.management.jmxremote.password.file=/Users/rail/Library/Caches/JetBrains/IntelliJIdea2022.3/tomcat/1d48a32e-b517-4711-8ee9-9dba1630000c/jmxremote.password, package.access=sun.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.tomcat., package.definition=sun.,java.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.naming.,org.apache.tomcat., jdk.tls.ephemeralDHKeySize=2048, server.loader=, java.util.logging.config.file=/Users/rail/Library/Caches/JetBrains/IntelliJIdea2022.3/tomcat/1d48a32e-b517-4711-8ee9-9dba1630000c/conf/logging.properties, connection.password=postgres, com.sun.management.jmxremote.access.file=/Users/rail/Library/Caches/JetBrains/IntelliJIdea2022.3/tomcat/1d48a32e-b517-4711-8ee9-9dba1630000c/jmxremote.access, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.runtime.version=17.0.8+7-LTS, java.naming.factory.initial=org.apache.naming.java.javaURLContextFactory, user.name=rail, path.separator=:, common.loader="/Users/rail/IdeaProjects/SkillSpace_Enterprise/apache-tomcat-10.1.6/lib","/Users/rail/IdeaProjects/SkillSpace_Enterprise/apache-tomcat-10.1.6/lib/*.jar","/Users/rail/IdeaProjects/SkillSpace_Enterprise/apache-tomcat-10.1.6/lib","/Users/rail/IdeaProjects/SkillSpace_Enterprise/apache-tomcat-10.1.6/lib/*.jar", hibernate.connection.username=****, os.version=12.7.2, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:postgresql://localhost:5432/g_market_online, file.encoding=UTF-8, format_sql=true, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.show_sql=true, java.vendor.version=Corretto-17.0.8.7.1, org.apache.catalina.security.SecurityListener.UMASK=0027, show_sql=true, hibernate.connection.driver_class=org.postgresql.Driver, java.vendor.url.bug=https://github.com/corretto/corretto-17/issues/, java.io.tmpdir=/Users/rail/IdeaProjects/SkillSpace_Enterprise/apache-tomcat-10.1.6/temp, tomcat.util.scan.StandardJarScanFilter.jarsToScan=log4j-taglib*.jar,log4j-jakarta-web*.jar,log4javascript*.jar,slf4j-taglib*.jar, catalina.home=/Users/rail/IdeaProjects/SkillSpace_Enterprise/apache-tomcat-10.1.6, java.version=17.0.8, com.sun.management.jmxremote.port=1099, tomcat.util.scan.StandardJarScanFilter.jarsToSkip=annotations-api.jar,ant-junit*.jar,ant-launcher*.jar,ant*.jar,asm-*.jar,aspectj*.jar,bcel*.jar,biz.aQute.bnd*.jar,bootstrap.jar,catalina-ant.jar,catalina-ha.jar,catalina-ssi.jar,catalina-storeconfig.jar,catalina-tribes.jar,catalina.jar,cglib-*.jar,cobertura-*.jar,commons-beanutils*.jar,commons-codec*.jar,commons-collections*.jar,commons-compress*.jar,commons-daemon.jar,commons-dbcp*.jar,commons-digester*.jar,commons-fileupload*.jar,commons-httpclient*.jar,commons-io*.jar,commons-lang*.jar,commons-logging*.jar,commons-math*.jar,commons-pool*.jar,derby-*.jar,dom4j-*.jar,easymock-*.jar,ecj-*.jar,el-api.jar,geronimo-spec-jaxrpc*.jar,h2*.jar,ha-api-*.jar,hamcrest-*.jar,hibernate*.jar,httpclient*.jar,icu4j-*.jar,jakartaee-migration-*.jar,jasper-el.jar,jasper.jar,jaspic-api.jar,jaxb-*.jar,jaxen-*.jar,jaxws-rt-*.jar,jdom-*.jar,jetty-*.jar,jmx-tools.jar,jmx.jar,jsp-api.jar,jstl.jar,jta*.jar,junit-*.jar,junit.jar,log4j*.jar,mail*.jar,objenesis-*.jar,oraclepki.jar,org.hamcrest.core_*.jar,org.junit_*.jar,oro-*.jar,servlet-api-*.jar,servlet-api.jar,slf4j*.jar,taglibs-standard-spec-*.jar,tagsoup-*.jar,tomcat-api.jar,tomcat-coyote.jar,tomcat-dbcp.jar,tomcat-i18n-*.jar,tomcat-jdbc.jar,tomcat-jni.jar,tomcat-juli-adapters.jar,tomcat-juli.jar,tomcat-util-scan.jar,tomcat-util.jar,tomcat-websocket.jar,tools.jar,unboundid-ldapsdk-*.jar,websocket-api.jar,websocket-client-api.jar,wsdl4j*.jar,xercesImpl.jar,xml-apis.jar,xmlParserAPIs-*.jar,xmlParserAPIs.jar,xom-*.jar, user.dir=/Users/rail/IdeaProjects/SkillSpace_Enterprise/apache-tomcat-10.1.6/bin, os.arch=x86_64, connection.username=postgres, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, connection.driver_class=org.postgresql.Driver, catalina.base=/Users/rail/Library/Caches/JetBrains/IntelliJIdea2022.3/tomcat/1d48a32e-b517-4711-8ee9-9dba1630000c, shared.loader=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@3e7d36c3, native.encoding=UTF-8, java.util.logging.manager=org.apache.juli.ClassLoaderLogManager, java.library.path=/Users/rail/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Amazon.com Inc., java.vm.info=mixed mode, sharing, java.vm.version=17.0.8+7-LTS, hibernate.bytecode.use_reflection_optimizer=true, java.rmi.server.randomIDs=true, java.rmi.server.hostname=127.0.0.1, sun.io.unicode.encoding=UnicodeBig, tomcat.util.buf.StringCache.byte.enabled=true, connection.url=jdbc:postgresql://localhost:5432/g_market_online, java.class.version=61.0, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16}
+2024 -01-11 16:09:55 DEBUG SessionFactoryImpl:239 - Session factory constructed with filter configurations : {}
+2024 -01-11 16:09:55 INFO  Version:21 - HV000001: Hibernate Validator 7.0.1.Final
+2024 -01-11 16:09:55 DEBUG ValidationXmlParser:121 - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024 -01-11 16:09:55 DEBUG ResourceLoaderHelper:60 - Trying to load META-INF/validation.xml via TCCL
+2024 -01-11 16:09:55 DEBUG ResourceLoaderHelper:66 - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024 -01-11 16:09:55 DEBUG ValidationXmlParser:128 - No META-INF/validation.xml found. Using annotation based configuration only.
+2024 -01-11 16:09:55 DEBUG TraversableResolvers:93 - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024 -01-11 16:09:55 DEBUG TraversableResolvers:103 - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024 -01-11 16:09:55 DEBUG ResourceBundleMessageInterpolator:174 - Loaded expression factory via original TCCL
+2024 -01-11 16:09:56 DEBUG ValidatorFactoryConfigurationHelper:345 - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024 -01-11 16:09:56 DEBUG ValidatorFactoryConfigurationHelper:420 - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024 -01-11 16:09:56 DEBUG ValidatorFactoryConfigurationHelper:421 - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024 -01-11 16:09:56 DEBUG ValidatorFactoryConfigurationHelper:422 - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024 -01-11 16:09:56 DEBUG ValidatorFactoryConfigurationHelper:423 - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024 -01-11 16:09:56 DEBUG ValidatorFactoryConfigurationHelper:424 - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024 -01-11 16:09:56 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [ru.rail.gmarketonline.entity.Product] is safe
+2024 -01-11 16:09:56 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.rail.gmarketonline.entity.Product
+2024 -01-11 16:09:56 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [ru.rail.gmarketonline.entity.Cart] is safe
+2024 -01-11 16:09:56 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.rail.gmarketonline.entity.Cart
+2024 -01-11 16:09:56 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [ru.rail.gmarketonline.entity.CartItem] is safe
+2024 -01-11 16:09:56 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.rail.gmarketonline.entity.CartItem
+2024 -01-11 16:09:56 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [ru.rail.gmarketonline.entity.User] is safe
+2024 -01-11 16:09:56 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.rail.gmarketonline.entity.User
+2024 -01-11 16:09:56 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [ru.rail.gmarketonline.entity.UserProduct] is safe
+2024 -01-11 16:09:56 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.rail.gmarketonline.entity.UserProduct
+2024 -01-11 16:09:56 DEBUG SessionFactoryServiceRegistryImpl:91 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2024 -01-11 16:09:56 DEBUG SchemaManagementToolCoordinator:760 - No schema actions specified for contributor `orm`; doing nothing
+2024 -01-11 16:09:56 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(max)] under max; prior registration was null
+2024 -01-11 16:09:56 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(min)] under min; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sum)] under sum; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(avg)] under avg; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CountFunction@27b9931f] under count; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.EveryAnyEmulation@683e8dc] under every; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.EveryAnyEmulation@d0a45be] under any; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(floor)] under floor; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ceiling)] under ceiling; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(mod)] under mod; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(abs)] under abs; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sign)] under sign; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sqrt)] under sqrt; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ln)] under ln; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(exp)] under exp; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(power)] under power; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(round)] under round; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sin)] under sin; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(cos)] under cos; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(tan)] under tan; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(asin)] under asin; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(acos)] under acos; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(atan)] under atan; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(atan2)] under atan2; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@7a12727a] under sinh; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@4ab9be69] under cosh; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@1467c4b5] under tanh; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@6ebd8e34] under pi; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@7d5a03b] under log; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(coalesce)] under coalesce; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(nullif)] under nullif; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(left)] under left; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(right)] under right; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(replace)] under replace; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(concat)] under concat; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lower)] under lower; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(upper)] under upper; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substring)] under substring; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(locate)] under locate; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(character_length)] under character_length; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:307 - Registering alternate key : length -> character_length
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LocatePositionEmulation@6637afeb] under position; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.InsertSubstringOverlayEmulation@c0dbc7a] under overlay; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TrimFunction@3c2b9570] under trim; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CastFunction@633ad3d7] under cast; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@751cd255] under collate; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.ExtractFunction@745bbd5e] under extract; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(least)] under least; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(greatest)] under greatest; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CoalesceIfnullEmulation@40f4fd8a] under ifnull; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lpad)] under lpad; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rpad)] under rpad; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LpadRpadPadEmulation@11b8052d] under pad; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CastStrEmulation@24942e91] under str; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.FormatFunction@547e74aa] under format; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TimestampaddFunction@28777ff5] under timestampadd; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TimestampdiffFunction@239a57f] under timestampdiff; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:307 - Registering alternate key : dateadd -> timestampadd
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:307 - Registering alternate key : datediff -> timestampdiff
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@229cf98a] under current_date; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@61c0feb5] under current_time; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@2fd7984b] under current_timestamp; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:307 - Registering alternate key : current date -> current_date
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:307 - Registering alternate key : current time -> current_time
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:307 - Registering alternate key : current timestamp -> current_timestamp
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@4f2eaf0a] under local_date; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@a3b4fcc] under local_time; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@6c683d68] under local_datetime; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@7f6ef56e] under offset_datetime; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:307 - Registering alternate key : local date -> local_date
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:307 - Registering alternate key : local time -> local_time
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:307 - Registering alternate key : local datetime -> local_datetime
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:307 - Registering alternate key : offset datetime -> offset_datetime
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@45824376] under instant; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:307 - Registering alternate key : current_instant -> instant
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.SqlFunction@673ae6e5] under sql; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(cot)] under cot; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(radians)] under radians; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(degrees)] under degrees; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log)] under log; prior registration was org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@7d5a03b
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@4b087d2e] under mod; prior registration was NamedSqmFunctionTemplate(mod)
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:307 - Registering alternate key : log10 -> log
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(cbrt)] under cbrt; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(pi)] under pi; prior registration was org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@6ebd8e34
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ltrim)] under ltrim; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rtrim)] under rtrim; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(repeat)] under repeat; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(md5)] under md5; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(initcap)] under initcap; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substr)] under substr; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substr)] under substring; prior registration was NamedSqmFunctionTemplate(substring)
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(translate)] under translate; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(to_number)] under to_number; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(to_char)] under to_char; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(to_date)] under to_date; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(to_timestamp)] under to_timestamp; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.ConcatPipeFunction@11cc0fbe] under concat; prior registration was NamedSqmFunctionTemplate(concat)
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under localtime; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtimestamp)] under localtimestamp; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under local_time; prior registration was org.hibernate.dialect.function.CurrentFunction@a3b4fcc
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtimestamp)] under local_datetime; prior registration was org.hibernate.dialect.function.CurrentFunction@6c683d68
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LengthFunction@5cf6771a] under character_length; prior registration was NamedSqmFunctionTemplate(character_length)
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:307 - Registering alternate key : length -> character_length
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LengthFunction@61ab81d] under bit_length; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LengthFunction@1818d331] under octet_length; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ascii)] under ascii; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(chr)] under chr; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:307 - Registering alternate key : char -> chr
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@455450b] under position; prior registration was org.hibernate.dialect.function.LocatePositionEmulation@6637afeb
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@6b74ac3c] under bitand; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@387d2b1f] under bitor; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@6622e67a] under bitxor; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@48f18aa8] under bitnot; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_and)] under bit_and; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_or)] under bit_or; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bool_and)] under bool_and; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:307 - Registering alternate key : every -> bool_and
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bool_or)] under bool_or; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:307 - Registering alternate key : any -> bool_or
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@62acac6] under median; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev)] under stddev; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev_pop)] under stddev_pop; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev_samp)] under stddev_samp; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(variance)] under variance; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(var_pop)] under var_pop; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(var_samp)] under var_samp; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(covar_pop)] under covar_pop; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(covar_samp)] under covar_samp; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(corr)] under corr; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(regr_avgx)] under regr_avgx; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(regr_avgy)] under regr_avgy; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(regr_count)] under regr_count; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(regr_intercept)] under regr_intercept; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(regr_r2)] under regr_r2; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(regr_slope)] under regr_slope; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(regr_sxx)] under regr_sxx; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(regr_sxy)] under regr_sxy; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(regr_syy)] under regr_syy; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@263e1168] under insert; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.MultipatternSqmFunctionDescriptor@428ffddb] under overlay; prior registration was org.hibernate.dialect.function.InsertSubstringOverlayEmulation@c0dbc7a
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(soundex)] under soundex; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.MultipatternSqmFunctionDescriptor@531ee654] under locate; prior registration was NamedSqmFunctionTemplate(locate)
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(row_number)] under row_number; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lag)] under lag; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lead)] under lead; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(first_value)] under first_value; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(last_value)] under last_value; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(nth_value)] under nth_value; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.ListaggStringAggEmulation@13778f0e] under listagg; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(make_date)] under make_date; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(make_time)] under make_time; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(make_timestamp)] under make_timestamp; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(make_timestamptz)] under make_timestamptz; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.InverseDistributionFunction@7e39b807] under mode; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.InverseDistributionFunction@729af8fe] under percentile_cont; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.InverseDistributionFunction@56f282bf] under percentile_disc; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetFunction@27c4db0f] under rank; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetFunction@4f7c0f09] under dense_rank; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetFunction@47d1ac7a] under percent_rank; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetFunction@288cfc9c] under cume_dist; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.PostgreSQLMinMaxFunction@3e5b384] under min; prior registration was NamedSqmFunctionTemplate(min)
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.PostgreSQLMinMaxFunction@20e6cd87] under max; prior registration was NamedSqmFunctionTemplate(max)
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.PostgreSQLTruncRoundFunction@14af0f72] under round; prior registration was NamedSqmFunctionTemplate(round)
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.PostgreSQLTruncFunction@52073a39] under trunc; prior registration was null
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:307 - Registering alternate key : truncate -> trunc
+2024 -01-11 16:09:57 DEBUG SqmFunctionRegistry:90 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@60e692c7] under date_trunc; prior registration was null
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - abs(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double acos(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Boolean any(BOOLEAN predicate)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Integer ascii(STRING arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double asin(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double atan(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double atan2(NUMERIC arg0, NUMERIC arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double avg(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - bit_and(arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Integer bit_length(STRING_OR_CLOB arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - bit_or(arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - bitand(arg0, arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - bitnot(arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - bitor(arg0, arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - bitxor(arg0, arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Boolean bool_and(BOOLEAN predicate)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Boolean bool_or(BOOLEAN predicate)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - cast(arg as Type)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double cbrt(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - ceiling(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Character char(INTEGER arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Integer character_length(STRING_OR_CLOB arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Character chr(INTEGER arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - coalesce(arg0[, arg1[, ...]])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String collate(STRING string as COLLATION collation)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - (STRING string0[, STRING string1[, ...]])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double corr(NUMERIC arg0, NUMERIC arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double cos(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double cosh(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double cot(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Long count([distinct ]{arg|*})
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double covar_pop(NUMERIC arg0, NUMERIC arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double covar_samp(NUMERIC arg0, NUMERIC arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double cume_dist([arg0[, ...]])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Date current date
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Time current time
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Timestamp current timestamp
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Date current_date
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Instant current_instant
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Time current_time
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Timestamp current_timestamp
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - date_trunc(STRING field, TEMPORAL datetime)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - dateadd(TEMPORAL_UNIT field, INTEGER magnitude, TEMPORAL datetime)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - basicType@4(java.lang.Long,-5)|basicType@8(java.lang.Double,8) datediff(TEMPORAL_UNIT field, TEMPORAL start, TEMPORAL end)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double degrees(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Long dense_rank([arg0[, ...]])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Boolean every(BOOLEAN predicate)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double exp(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - extract(TEMPORAL_UNIT field from TEMPORAL arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - first_valueANY value
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - floor(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String format(TEMPORAL datetime as STRING pattern)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - greatest(COMPARABLE arg0, COMPARABLE arg1[, arg2[, ...]])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - ifnull(arg0, arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String initcap(arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String insert(STRING string, INTEGER start, INTEGER length, STRING replacement)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Instant instant
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - lagANY value[, INTEGER offset[, ANY default]]
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - last_valueANY value
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - leadANY value[, INTEGER offset[, ANY default]]
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - least(COMPARABLE arg0, COMPARABLE arg1[, arg2[, ...]])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String left(STRING string, INTEGER length)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Integer length(STRING_OR_CLOB arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String listagg(STRING arg0, STRING arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double ln(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - LocalDate local date
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - LocalDateTime local datetime
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - LocalTime local time
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - LocalDate local_date
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - LocalDateTime local_datetime
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - LocalTime local_time
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Time localtime
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Timestamp localtimestamp
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Integer locate(STRING pattern, STRING string[, INTEGER start])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double log(NUMERIC arg0[, NUMERIC arg1])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double log10(NUMERIC arg0[, NUMERIC arg1])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String lower(STRING string)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String lpad(STRING string, INTEGER length[, STRING padding])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String ltrim(STRING string[, STRING characters])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Date make_date(INTEGER arg0, INTEGER arg1, INTEGER arg2)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Time make_time(INTEGER arg0, INTEGER arg1, INTEGER arg2)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Timestamp make_timestamp(INTEGER arg0, INTEGER arg1, INTEGER arg2, INTEGER arg3, INTEGER arg4, INTEGER arg5)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Timestamp make_timestamptz(INTEGER arg0, INTEGER arg1, INTEGER arg2, INTEGER arg3, INTEGER arg4, INTEGER arg5[, INTEGER arg6])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - max(COMPARABLE arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String md5(arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double median(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - min(COMPARABLE arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Integer mod(INTEGER arg0, INTEGER arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - mode()
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - nth_valueANY value, INTEGER nth
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - nullif(arg0, arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Integer octet_length(STRING_OR_CLOB arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - OffsetDateTime offset datetime
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - OffsetDateTime offset_datetime
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String overlay(string placing replacement from start[ for length])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String pad(STRING string with INTEGER length {leading|trailing}[ STRING character])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double percent_rank([arg0[, ...]])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - percentile_cont(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - percentile_disc(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double pi
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Integer position(STRING pattern in STRING string)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double power(NUMERIC arg0, NUMERIC arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double radians(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Long rank([arg0[, ...]])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double regr_avgx(NUMERIC arg0, NUMERIC arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double regr_avgy(NUMERIC arg0, NUMERIC arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double regr_count(NUMERIC arg0, NUMERIC arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double regr_intercept(NUMERIC arg0, NUMERIC arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double regr_r2(NUMERIC arg0, NUMERIC arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double regr_slope(NUMERIC arg0, NUMERIC arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double regr_sxx(NUMERIC arg0, NUMERIC arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double regr_sxy(NUMERIC arg0, NUMERIC arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double regr_syy(NUMERIC arg0, NUMERIC arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String repeat(STRING string, INTEGER times)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String replace(STRING string, STRING pattern, STRING replacement)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String right(STRING string, INTEGER length)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - round(NUMERIC number[, INTEGER places])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Long row_number()
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String rpad(STRING string, INTEGER length[, STRING padding])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String rtrim(STRING string[, STRING characters])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Integer sign(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double sin(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double sinh(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String soundex(arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Object sql
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double sqrt(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double stddev(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double stddev_pop(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double stddev_samp(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String str(arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String substr(STRING string, INTEGER start[, INTEGER length])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String substring(STRING string{ from|,} INTEGER start[{ for|,} INTEGER length])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - sum(arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double tan(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double tanh(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - timestampadd(TEMPORAL_UNIT field, INTEGER magnitude, TEMPORAL datetime)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - basicType@4(java.lang.Long,-5)|basicType@8(java.lang.Double,8) timestampdiff(TEMPORAL_UNIT field, TEMPORAL start, TEMPORAL end)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String to_char(ANY arg0[, STRING arg1, STRING arg2])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Date to_date(STRING arg0[, STRING arg1, STRING arg2])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double to_number(STRING arg0[, STRING arg1, STRING arg2])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Timestamp to_timestamp(STRING arg0[, STRING arg1, STRING arg2])
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String translate(STRING arg0, STRING arg1, STRING arg2)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String trim([[{leading|trailing|both} ][STRING arg0 ]from] STRING arg1)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - trunc( ... )
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - truncate( ... )
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - String upper(STRING string)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double var_pop(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double var_samp(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG HQL_FUNCTIONS:105 - Double variance(NUMERIC arg)
+2024 -01-11 16:09:57 DEBUG cache:48 - Starting QueryPlanCache(2048)
+2024 -01-11 16:09:57 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [ru.rail.gmarketonline.entity.Product] is safe
+2024 -01-11 16:09:57 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.rail.gmarketonline.entity.Product
+2024 -01-11 16:09:58 DEBUG BytecodeProviderImpl:235 - HHH000513: Unable to create the ReflectionOptimizer for [ru.rail.gmarketonline.entity.Product]
+org.hibernate.bytecode.internal.bytebuddy.PrivateAccessorException: private accessor [cartItems]
+	at org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl.findAccessors(BytecodeProviderImpl.java:1238)
+	at org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl.getReflectionOptimizer(BytecodeProviderImpl.java:232)
+	at org.hibernate.metamodel.internal.EntityRepresentationStrategyPojoStandard.resolveReflectionOptimizer(EntityRepresentationStrategyPojoStandard.java:293)
+	at org.hibernate.metamodel.internal.EntityRepresentationStrategyPojoStandard.<init>(EntityRepresentationStrategyPojoStandard.java:161)
+	at org.hibernate.metamodel.internal.ManagedTypeRepresentationResolverStandard.resolveStrategy(ManagedTypeRepresentationResolverStandard.java:62)
+	at org.hibernate.persister.entity.AbstractEntityPersister.<init>(AbstractEntityPersister.java:508)
+	at org.hibernate.persister.entity.SingleTableEntityPersister.<init>(SingleTableEntityPersister.java:140)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:92)
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:75)
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.processBootEntities(MappingMetamodelImpl.java:247)
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.finishInitialization(MappingMetamodelImpl.java:185)
+	at org.hibernate.internal.SessionFactoryImpl.initializeMappingModel(SessionFactoryImpl.java:320)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:270)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:941)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:960)
+	at ru.rail.gmarketonline.util.HibernateUtil.configureWithAnnotatedClasses(HibernateUtil.java:18)
+	at ru.rail.gmarketonline.repository.UserRepository.initializeSessionFactory(UserRepository.java:23)
+	at ru.rail.gmarketonline.repository.UserRepository.<clinit>(UserRepository.java:14)
+	at ru.rail.gmarketonline.service.UserService.<init>(UserService.java:17)
+	at ru.rail.gmarketonline.service.UserService.<clinit>(UserService.java:16)
+	at ru.rail.gmarketonline.servlet.LoginServlet.<init>(LoginServlet.java:20)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:143)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:865)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:649)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:114)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:676)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024 -01-11 16:09:58 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [ru.rail.gmarketonline.entity.Cart] is safe
+2024 -01-11 16:09:58 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.rail.gmarketonline.entity.Cart
+2024 -01-11 16:09:58 DEBUG BytecodeProviderImpl:235 - HHH000513: Unable to create the ReflectionOptimizer for [ru.rail.gmarketonline.entity.Cart]
+org.hibernate.bytecode.internal.bytebuddy.PrivateAccessorException: private accessor [cartItems]
+	at org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl.findAccessors(BytecodeProviderImpl.java:1238)
+	at org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl.getReflectionOptimizer(BytecodeProviderImpl.java:232)
+	at org.hibernate.metamodel.internal.EntityRepresentationStrategyPojoStandard.resolveReflectionOptimizer(EntityRepresentationStrategyPojoStandard.java:293)
+	at org.hibernate.metamodel.internal.EntityRepresentationStrategyPojoStandard.<init>(EntityRepresentationStrategyPojoStandard.java:161)
+	at org.hibernate.metamodel.internal.ManagedTypeRepresentationResolverStandard.resolveStrategy(ManagedTypeRepresentationResolverStandard.java:62)
+	at org.hibernate.persister.entity.AbstractEntityPersister.<init>(AbstractEntityPersister.java:508)
+	at org.hibernate.persister.entity.SingleTableEntityPersister.<init>(SingleTableEntityPersister.java:140)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:92)
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:75)
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.processBootEntities(MappingMetamodelImpl.java:247)
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.finishInitialization(MappingMetamodelImpl.java:185)
+	at org.hibernate.internal.SessionFactoryImpl.initializeMappingModel(SessionFactoryImpl.java:320)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:270)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:941)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:960)
+	at ru.rail.gmarketonline.util.HibernateUtil.configureWithAnnotatedClasses(HibernateUtil.java:18)
+	at ru.rail.gmarketonline.repository.UserRepository.initializeSessionFactory(UserRepository.java:23)
+	at ru.rail.gmarketonline.repository.UserRepository.<clinit>(UserRepository.java:14)
+	at ru.rail.gmarketonline.service.UserService.<init>(UserService.java:17)
+	at ru.rail.gmarketonline.service.UserService.<clinit>(UserService.java:16)
+	at ru.rail.gmarketonline.servlet.LoginServlet.<init>(LoginServlet.java:20)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:143)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:865)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:649)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:114)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:676)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024 -01-11 16:09:58 DEBUG interceptor:46 - To-one property `ru.rail.gmarketonline.entity.CartItem#product` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2024 -01-11 16:09:58 DEBUG interceptor:46 - To-one property `ru.rail.gmarketonline.entity.CartItem#product` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2024 -01-11 16:09:58 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [ru.rail.gmarketonline.entity.CartItem] is safe
+2024 -01-11 16:09:58 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.rail.gmarketonline.entity.CartItem
+2024 -01-11 16:09:58 DEBUG BytecodeProviderImpl:235 - HHH000513: Unable to create the ReflectionOptimizer for [ru.rail.gmarketonline.entity.CartItem]
+org.hibernate.bytecode.internal.bytebuddy.PrivateAccessorException: private accessor [cart]
+	at org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl.findAccessors(BytecodeProviderImpl.java:1238)
+	at org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl.getReflectionOptimizer(BytecodeProviderImpl.java:232)
+	at org.hibernate.metamodel.internal.EntityRepresentationStrategyPojoStandard.resolveReflectionOptimizer(EntityRepresentationStrategyPojoStandard.java:293)
+	at org.hibernate.metamodel.internal.EntityRepresentationStrategyPojoStandard.<init>(EntityRepresentationStrategyPojoStandard.java:161)
+	at org.hibernate.metamodel.internal.ManagedTypeRepresentationResolverStandard.resolveStrategy(ManagedTypeRepresentationResolverStandard.java:62)
+	at org.hibernate.persister.entity.AbstractEntityPersister.<init>(AbstractEntityPersister.java:508)
+	at org.hibernate.persister.entity.SingleTableEntityPersister.<init>(SingleTableEntityPersister.java:140)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:92)
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:75)
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.processBootEntities(MappingMetamodelImpl.java:247)
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.finishInitialization(MappingMetamodelImpl.java:185)
+	at org.hibernate.internal.SessionFactoryImpl.initializeMappingModel(SessionFactoryImpl.java:320)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:270)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:941)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:960)
+	at ru.rail.gmarketonline.util.HibernateUtil.configureWithAnnotatedClasses(HibernateUtil.java:18)
+	at ru.rail.gmarketonline.repository.UserRepository.initializeSessionFactory(UserRepository.java:23)
+	at ru.rail.gmarketonline.repository.UserRepository.<clinit>(UserRepository.java:14)
+	at ru.rail.gmarketonline.service.UserService.<init>(UserService.java:17)
+	at ru.rail.gmarketonline.service.UserService.<clinit>(UserService.java:16)
+	at ru.rail.gmarketonline.servlet.LoginServlet.<init>(LoginServlet.java:20)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:143)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:865)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:649)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:114)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:676)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024 -01-11 16:09:58 DEBUG interceptor:46 - To-one property `ru.rail.gmarketonline.entity.CartItem#product` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2024 -01-11 16:09:58 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [ru.rail.gmarketonline.entity.User] is safe
+2024 -01-11 16:09:58 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.rail.gmarketonline.entity.User
+2024 -01-11 16:09:58 DEBUG BytecodeProviderImpl:235 - HHH000513: Unable to create the ReflectionOptimizer for [ru.rail.gmarketonline.entity.User]
+org.hibernate.bytecode.internal.bytebuddy.PrivateAccessorException: private accessor [carts]
+	at org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl.findAccessors(BytecodeProviderImpl.java:1238)
+	at org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl.getReflectionOptimizer(BytecodeProviderImpl.java:232)
+	at org.hibernate.metamodel.internal.EntityRepresentationStrategyPojoStandard.resolveReflectionOptimizer(EntityRepresentationStrategyPojoStandard.java:293)
+	at org.hibernate.metamodel.internal.EntityRepresentationStrategyPojoStandard.<init>(EntityRepresentationStrategyPojoStandard.java:161)
+	at org.hibernate.metamodel.internal.ManagedTypeRepresentationResolverStandard.resolveStrategy(ManagedTypeRepresentationResolverStandard.java:62)
+	at org.hibernate.persister.entity.AbstractEntityPersister.<init>(AbstractEntityPersister.java:508)
+	at org.hibernate.persister.entity.SingleTableEntityPersister.<init>(SingleTableEntityPersister.java:140)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:92)
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:75)
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.processBootEntities(MappingMetamodelImpl.java:247)
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.finishInitialization(MappingMetamodelImpl.java:185)
+	at org.hibernate.internal.SessionFactoryImpl.initializeMappingModel(SessionFactoryImpl.java:320)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:270)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:941)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:960)
+	at ru.rail.gmarketonline.util.HibernateUtil.configureWithAnnotatedClasses(HibernateUtil.java:18)
+	at ru.rail.gmarketonline.repository.UserRepository.initializeSessionFactory(UserRepository.java:23)
+	at ru.rail.gmarketonline.repository.UserRepository.<clinit>(UserRepository.java:14)
+	at ru.rail.gmarketonline.service.UserService.<init>(UserService.java:17)
+	at ru.rail.gmarketonline.service.UserService.<clinit>(UserService.java:16)
+	at ru.rail.gmarketonline.servlet.LoginServlet.<init>(LoginServlet.java:20)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:143)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:865)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:649)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:114)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:676)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024 -01-11 16:09:58 DEBUG interceptor:46 - To-one property `ru.rail.gmarketonline.entity.UserProduct#product` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2024 -01-11 16:09:58 DEBUG interceptor:46 - To-one property `ru.rail.gmarketonline.entity.UserProduct#product` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2024 -01-11 16:09:58 DEBUG interceptor:46 - To-one property `ru.rail.gmarketonline.entity.UserProduct#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2024 -01-11 16:09:58 DEBUG interceptor:46 - To-one property `ru.rail.gmarketonline.entity.UserProduct#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2024 -01-11 16:09:58 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [ru.rail.gmarketonline.entity.UserProduct] is safe
+2024 -01-11 16:09:58 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.rail.gmarketonline.entity.UserProduct
+2024 -01-11 16:09:58 DEBUG BytecodeProviderImpl:235 - HHH000513: Unable to create the ReflectionOptimizer for [ru.rail.gmarketonline.entity.UserProduct]
+org.hibernate.bytecode.internal.bytebuddy.PrivateAccessorException: private accessor [product]
+	at org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl.findAccessors(BytecodeProviderImpl.java:1238)
+	at org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl.getReflectionOptimizer(BytecodeProviderImpl.java:232)
+	at org.hibernate.metamodel.internal.EntityRepresentationStrategyPojoStandard.resolveReflectionOptimizer(EntityRepresentationStrategyPojoStandard.java:293)
+	at org.hibernate.metamodel.internal.EntityRepresentationStrategyPojoStandard.<init>(EntityRepresentationStrategyPojoStandard.java:161)
+	at org.hibernate.metamodel.internal.ManagedTypeRepresentationResolverStandard.resolveStrategy(ManagedTypeRepresentationResolverStandard.java:62)
+	at org.hibernate.persister.entity.AbstractEntityPersister.<init>(AbstractEntityPersister.java:508)
+	at org.hibernate.persister.entity.SingleTableEntityPersister.<init>(SingleTableEntityPersister.java:140)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:92)
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:75)
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.processBootEntities(MappingMetamodelImpl.java:247)
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.finishInitialization(MappingMetamodelImpl.java:185)
+	at org.hibernate.internal.SessionFactoryImpl.initializeMappingModel(SessionFactoryImpl.java:320)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:270)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:941)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:960)
+	at ru.rail.gmarketonline.util.HibernateUtil.configureWithAnnotatedClasses(HibernateUtil.java:18)
+	at ru.rail.gmarketonline.repository.UserRepository.initializeSessionFactory(UserRepository.java:23)
+	at ru.rail.gmarketonline.repository.UserRepository.<clinit>(UserRepository.java:14)
+	at ru.rail.gmarketonline.service.UserService.<init>(UserService.java:17)
+	at ru.rail.gmarketonline.service.UserService.<clinit>(UserService.java:16)
+	at ru.rail.gmarketonline.servlet.LoginServlet.<init>(LoginServlet.java:20)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:143)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:865)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:649)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:114)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:676)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024 -01-11 16:09:58 DEBUG interceptor:46 - To-one property `ru.rail.gmarketonline.entity.UserProduct#product` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2024 -01-11 16:09:58 DEBUG interceptor:46 - To-one property `ru.rail.gmarketonline.entity.UserProduct#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2024 -01-11 16:09:58 DEBUG mutation:446 - Skipping collection (re)creation - ru.rail.gmarketonline.entity.Product.cartItems
+2024 -01-11 16:09:58 DEBUG mutation:482 - Skipping collection row deletions - ru.rail.gmarketonline.entity.Product.cartItems
+2024 -01-11 16:09:58 DEBUG mutation:506 - Skipping collection removals - ru.rail.gmarketonline.entity.Product.cartItems
+2024 -01-11 16:09:58 DEBUG mutation:446 - Skipping collection (re)creation - ru.rail.gmarketonline.entity.Product.userProducts
+2024 -01-11 16:09:58 DEBUG mutation:482 - Skipping collection row deletions - ru.rail.gmarketonline.entity.Product.userProducts
+2024 -01-11 16:09:58 DEBUG mutation:506 - Skipping collection removals - ru.rail.gmarketonline.entity.Product.userProducts
+2024 -01-11 16:09:58 DEBUG mutation:446 - Skipping collection (re)creation - ru.rail.gmarketonline.entity.User.carts
+2024 -01-11 16:09:58 DEBUG mutation:482 - Skipping collection row deletions - ru.rail.gmarketonline.entity.User.carts
+2024 -01-11 16:09:58 DEBUG mutation:506 - Skipping collection removals - ru.rail.gmarketonline.entity.User.carts
+2024 -01-11 16:09:58 DEBUG mutation:446 - Skipping collection (re)creation - ru.rail.gmarketonline.entity.Cart.cartItems
+2024 -01-11 16:09:58 DEBUG mutation:482 - Skipping collection row deletions - ru.rail.gmarketonline.entity.Cart.cartItems
+2024 -01-11 16:09:58 DEBUG mutation:506 - Skipping collection removals - ru.rail.gmarketonline.entity.Cart.cartItems
+2024 -01-11 16:09:58 DEBUG creation:93 - Starting post-init callbacks
+2024 -01-11 16:09:58 DEBUG creation:243 - Starting PostInitCallbackEntry : PluralAttributeMapping( NavigableRole[ru.rail.gmarketonline.entity.Product.cartItems#{element}]) - element descriptor
+2024 -01-11 16:09:58 DEBUG creation:243 - Starting PostInitCallbackEntry : PluralAttributeMapping(ru.rail.gmarketonline.entity.Product.cartItems)#finishInitialization
+2024 -01-11 16:09:58 DEBUG creation:243 - Starting PostInitCallbackEntry : PluralAttributeMapping(ru.rail.gmarketonline.entity.Product.cartItems) - key descriptor
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : PluralAttributeMapping( NavigableRole[ru.rail.gmarketonline.entity.Product.userProducts#{element}]) - element descriptor
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : PluralAttributeMapping(ru.rail.gmarketonline.entity.Product.userProducts)#finishInitialization
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : PluralAttributeMapping(ru.rail.gmarketonline.entity.Product.userProducts) - key descriptor
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : Entity(ru.rail.gmarketonline.entity.Product) `staticFetchableList` generator
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : PluralAttributeMapping( NavigableRole[ru.rail.gmarketonline.entity.Cart.cartItems#{element}]) - element descriptor
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : PluralAttributeMapping(ru.rail.gmarketonline.entity.Cart.cartItems)#finishInitialization
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : PluralAttributeMapping(ru.rail.gmarketonline.entity.Cart.cartItems) - key descriptor
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : To-one key - NavigableRole[ru.rail.gmarketonline.entity.Cart.user]
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : Entity(ru.rail.gmarketonline.entity.Cart) `staticFetchableList` generator
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : To-one key - NavigableRole[ru.rail.gmarketonline.entity.CartItem.cart]
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : To-one key - NavigableRole[ru.rail.gmarketonline.entity.CartItem.product]
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : Entity(ru.rail.gmarketonline.entity.CartItem) `staticFetchableList` generator
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : PluralAttributeMapping( NavigableRole[ru.rail.gmarketonline.entity.User.carts#{element}]) - element descriptor
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : PluralAttributeMapping(ru.rail.gmarketonline.entity.User.carts)#finishInitialization
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : PluralAttributeMapping(ru.rail.gmarketonline.entity.User.carts) - key descriptor
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : Entity(ru.rail.gmarketonline.entity.User) `staticFetchableList` generator
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : To-one key - NavigableRole[ru.rail.gmarketonline.entity.UserProduct.product]
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : To-one key - NavigableRole[ru.rail.gmarketonline.entity.UserProduct.user]
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : Entity(ru.rail.gmarketonline.entity.UserProduct) `staticFetchableList` generator
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : PluralAttributeMapping( NavigableRole[ru.rail.gmarketonline.entity.Product.cartItems#{element}]) - element descriptor
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : PluralAttributeMapping( NavigableRole[ru.rail.gmarketonline.entity.Product.userProducts#{element}]) - element descriptor
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : PluralAttributeMapping( NavigableRole[ru.rail.gmarketonline.entity.Cart.cartItems#{element}]) - element descriptor
+2024 -01-11 16:09:59 DEBUG creation:243 - Starting PostInitCallbackEntry : PluralAttributeMapping( NavigableRole[ru.rail.gmarketonline.entity.User.carts#{element}]) - element descriptor
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2880 - Static SQL for entity: ru.rail.gmarketonline.entity.Product
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2885 -  Version select: select product_id from products where product_id=?
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2891 -  Insert (0): insert into products (description,price,product_name,quantity) values (?,?,?,?)
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2898 -  Update (0): update products set description=?,price=?,product_name=?,quantity=? where product_id=?
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2904 -  Delete (0): delete from products where product_id=?
+2024 -01-11 16:09:59 DEBUG create:34 - Created new SQL alias : p1_0
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [StandardTableGroup(ru.rail.gmarketonline.entity.Product)] with identifierForTableGroup [ru.rail.gmarketonline.entity.Product] for NavigablePath [ru.rail.gmarketonline.entity.Product] 
+2024 -01-11 16:09:59 DEBUG AST:70 - DomainResult Graph:
+ \-EntityResultImpl [ru.rail.gmarketonline.entity.Product]
+ |  +-DelayedCollectionFetch [ru.rail.gmarketonline.entity.Product.cartItems]
+ |  +-BasicFetch [ru.rail.gmarketonline.entity.Product.description]
+ |  +-BasicFetch [ru.rail.gmarketonline.entity.Product.price]
+ |  +-BasicFetch [ru.rail.gmarketonline.entity.Product.productName]
+ |  +-BasicFetch [ru.rail.gmarketonline.entity.Product.quantity]
+ |  \-DelayedCollectionFetch [ru.rail.gmarketonline.entity.Product.userProducts]
+
+2024 -01-11 16:09:59 DEBUG tree:46 - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (p1 : ru.rail.gmarketonline.entity.Product) {
+          primaryTableReference : products as p1_0
+        }
+      }
+    }
+
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2880 - Static SQL for entity: ru.rail.gmarketonline.entity.Cart
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2885 -  Version select: select cart_id from carts where cart_id=?
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2891 -  Insert (0): insert into carts (created_at,user_id) values (?,?)
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2898 -  Update (0): update carts set created_at=?,user_id=? where cart_id=?
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2904 -  Delete (0): delete from carts where cart_id=?
+2024 -01-11 16:09:59 DEBUG create:34 - Created new SQL alias : c1_0
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [StandardTableGroup(ru.rail.gmarketonline.entity.Cart)] with identifierForTableGroup [ru.rail.gmarketonline.entity.Cart] for NavigablePath [ru.rail.gmarketonline.entity.Cart] 
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@68723c36] with identifierForTableGroup [ru.rail.gmarketonline.entity.Cart.user] for NavigablePath [ru.rail.gmarketonline.entity.Cart.user] 
+2024 -01-11 16:09:59 DEBUG AST:70 - DomainResult Graph:
+ \-EntityResultImpl [ru.rail.gmarketonline.entity.Cart]
+ |  +-DelayedCollectionFetch [ru.rail.gmarketonline.entity.Cart.cartItems]
+ |  +-BasicFetch [ru.rail.gmarketonline.entity.Cart.createdAt]
+ |  \-EntityDelayedFetchImpl [ru.rail.gmarketonline.entity.Cart.user]
+
+2024 -01-11 16:09:59 DEBUG tree:46 - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (c1 : ru.rail.gmarketonline.entity.Cart) {
+          primaryTableReference : carts as c1_0
+          TableGroupJoins {
+            left  join LazyTableGroup (u1 : ru.rail.gmarketonline.entity.Cart.user) {
+            }
+          }
+        }
+      }
+    }
+
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2880 - Static SQL for entity: ru.rail.gmarketonline.entity.CartItem
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2885 -  Version select: select cart_item_id from carts_items where cart_item_id=?
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2891 -  Insert (0): insert into carts_items (cart_id,product_id,quantity) values (?,?,?)
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2898 -  Update (0): update carts_items set cart_id=?,product_id=?,quantity=? where cart_item_id=?
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2904 -  Delete (0): delete from carts_items where cart_item_id=?
+2024 -01-11 16:09:59 DEBUG create:34 - Created new SQL alias : c1_0
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [StandardTableGroup(ru.rail.gmarketonline.entity.CartItem)] with identifierForTableGroup [ru.rail.gmarketonline.entity.CartItem] for NavigablePath [ru.rail.gmarketonline.entity.CartItem] 
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@581b7a8f] with identifierForTableGroup [ru.rail.gmarketonline.entity.CartItem.cart] for NavigablePath [ru.rail.gmarketonline.entity.CartItem.cart] 
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@84b225d] with identifierForTableGroup [ru.rail.gmarketonline.entity.CartItem.product] for NavigablePath [ru.rail.gmarketonline.entity.CartItem.product] 
+2024 -01-11 16:09:59 DEBUG create:34 - Created new SQL alias : p1_0
+2024 -01-11 16:09:59 DEBUG AST:70 - DomainResult Graph:
+ \-EntityResultImpl [ru.rail.gmarketonline.entity.CartItem]
+ |  +-EntityDelayedFetchImpl [ru.rail.gmarketonline.entity.CartItem.cart]
+ |  +-EntityFetchJoinedImpl [ru.rail.gmarketonline.entity.CartItem.product]
+ |  \-BasicFetch [ru.rail.gmarketonline.entity.CartItem.quantity]
+
+2024 -01-11 16:09:59 DEBUG tree:46 - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (c1 : ru.rail.gmarketonline.entity.CartItem) {
+          primaryTableReference : carts_items as c1_0
+          TableGroupJoins {
+            left  join LazyTableGroup (c2 : ru.rail.gmarketonline.entity.CartItem.cart) {
+            }
+             join LazyTableGroup (p1 : ru.rail.gmarketonline.entity.CartItem.product) {
+              primaryTableReference : products as p1_0
+            }
+          }
+        }
+      }
+    }
+
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2880 - Static SQL for entity: ru.rail.gmarketonline.entity.User
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2885 -  Version select: select user_id from users where user_id=?
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2891 -  Insert (0): insert into users (email,gender,password,role,username) values (?,?,?,?,?)
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2898 -  Update (0): update users set email=?,gender=?,password=?,role=?,username=? where user_id=?
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2904 -  Delete (0): delete from users where user_id=?
+2024 -01-11 16:09:59 DEBUG create:34 - Created new SQL alias : u1_0
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [StandardTableGroup(ru.rail.gmarketonline.entity.User)] with identifierForTableGroup [ru.rail.gmarketonline.entity.User] for NavigablePath [ru.rail.gmarketonline.entity.User] 
+2024 -01-11 16:09:59 DEBUG AST:70 - DomainResult Graph:
+ \-EntityResultImpl [ru.rail.gmarketonline.entity.User]
+ |  +-DelayedCollectionFetch [ru.rail.gmarketonline.entity.User.carts]
+ |  +-BasicFetch [ru.rail.gmarketonline.entity.User.email]
+ |  +-BasicFetch [ru.rail.gmarketonline.entity.User.gender]
+ |  +-BasicFetch [ru.rail.gmarketonline.entity.User.password]
+ |  +-BasicFetch [ru.rail.gmarketonline.entity.User.role]
+ |  \-BasicFetch [ru.rail.gmarketonline.entity.User.username]
+
+2024 -01-11 16:09:59 DEBUG tree:46 - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (u1 : ru.rail.gmarketonline.entity.User) {
+          primaryTableReference : users as u1_0
+        }
+      }
+    }
+
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2880 - Static SQL for entity: ru.rail.gmarketonline.entity.UserProduct
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2885 -  Version select: select user_product_id from users_products where user_product_id=?
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2891 -  Insert (0): insert into users_products (product_id,user_id) values (?,?)
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2898 -  Update (0): update users_products set product_id=?,user_id=? where user_product_id=?
+2024 -01-11 16:09:59 DEBUG AbstractEntityPersister:2904 -  Delete (0): delete from users_products where user_product_id=?
+2024 -01-11 16:09:59 DEBUG create:34 - Created new SQL alias : u1_0
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [StandardTableGroup(ru.rail.gmarketonline.entity.UserProduct)] with identifierForTableGroup [ru.rail.gmarketonline.entity.UserProduct] for NavigablePath [ru.rail.gmarketonline.entity.UserProduct] 
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@1f9ef20a] with identifierForTableGroup [ru.rail.gmarketonline.entity.UserProduct.product] for NavigablePath [ru.rail.gmarketonline.entity.UserProduct.product] 
+2024 -01-11 16:09:59 DEBUG create:34 - Created new SQL alias : p1_0
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@233d024b] with identifierForTableGroup [ru.rail.gmarketonline.entity.UserProduct.user] for NavigablePath [ru.rail.gmarketonline.entity.UserProduct.user] 
+2024 -01-11 16:09:59 DEBUG create:34 - Created new SQL alias : u2_0
+2024 -01-11 16:09:59 DEBUG AST:70 - DomainResult Graph:
+ \-EntityResultImpl [ru.rail.gmarketonline.entity.UserProduct]
+ |  +-EntityFetchJoinedImpl [ru.rail.gmarketonline.entity.UserProduct.product]
+ |  \-EntityFetchJoinedImpl [ru.rail.gmarketonline.entity.UserProduct.user]
+
+2024 -01-11 16:09:59 DEBUG tree:46 - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (u1 : ru.rail.gmarketonline.entity.UserProduct) {
+          primaryTableReference : users_products as u1_0
+          TableGroupJoins {
+             join LazyTableGroup (p1 : ru.rail.gmarketonline.entity.UserProduct.product) {
+              primaryTableReference : products as p1_0
+            }
+             join LazyTableGroup (u2 : ru.rail.gmarketonline.entity.UserProduct.user) {
+              primaryTableReference : users as u2_0
+            }
+          }
+        }
+      }
+    }
+
+2024 -01-11 16:09:59 DEBUG create:34 - Created new SQL alias : c1_0
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.OneToManyTableGroup@62b746d0] with identifierForTableGroup [ru.rail.gmarketonline.entity.Product.cartItems] for NavigablePath [ru.rail.gmarketonline.entity.Product.cartItems] 
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [StandardTableGroup(ru.rail.gmarketonline.entity.Product.cartItems.{element})] with identifierForTableGroup [ru.rail.gmarketonline.entity.Product.cartItems.{element}] for NavigablePath [ru.rail.gmarketonline.entity.Product.cartItems.{element}] 
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@2aaab74] with identifierForTableGroup [ru.rail.gmarketonline.entity.Product.cartItems.{element}.cart] for NavigablePath [ru.rail.gmarketonline.entity.Product.cartItems.{element}.cart] 
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@527f7b88] with identifierForTableGroup [ru.rail.gmarketonline.entity.Product.cartItems.{element}.product] for NavigablePath [ru.rail.gmarketonline.entity.Product.cartItems.{element}.product] 
+2024 -01-11 16:09:59 DEBUG mutation:649 - Static SQL for collection: ru.rail.gmarketonline.entity.Product.cartItems
+2024 -01-11 16:09:59 DEBUG create:34 - Created new SQL alias : u1_0
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.OneToManyTableGroup@4882e4a3] with identifierForTableGroup [ru.rail.gmarketonline.entity.Product.userProducts] for NavigablePath [ru.rail.gmarketonline.entity.Product.userProducts] 
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [StandardTableGroup(ru.rail.gmarketonline.entity.Product.userProducts.{element})] with identifierForTableGroup [ru.rail.gmarketonline.entity.Product.userProducts.{element}] for NavigablePath [ru.rail.gmarketonline.entity.Product.userProducts.{element}] 
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@30cf7390] with identifierForTableGroup [ru.rail.gmarketonline.entity.Product.userProducts.{element}.product] for NavigablePath [ru.rail.gmarketonline.entity.Product.userProducts.{element}.product] 
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@385c0db] with identifierForTableGroup [ru.rail.gmarketonline.entity.Product.userProducts.{element}.user] for NavigablePath [ru.rail.gmarketonline.entity.Product.userProducts.{element}.user] 
+2024 -01-11 16:09:59 DEBUG create:34 - Created new SQL alias : u2_0
+2024 -01-11 16:09:59 DEBUG mutation:649 - Static SQL for collection: ru.rail.gmarketonline.entity.Product.userProducts
+2024 -01-11 16:09:59 DEBUG create:34 - Created new SQL alias : c1_0
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.OneToManyTableGroup@2483e312] with identifierForTableGroup [ru.rail.gmarketonline.entity.User.carts] for NavigablePath [ru.rail.gmarketonline.entity.User.carts] 
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [StandardTableGroup(ru.rail.gmarketonline.entity.User.carts.{element})] with identifierForTableGroup [ru.rail.gmarketonline.entity.User.carts.{element}] for NavigablePath [ru.rail.gmarketonline.entity.User.carts.{element}] 
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@7b7bbcdd] with identifierForTableGroup [ru.rail.gmarketonline.entity.User.carts.{element}.user] for NavigablePath [ru.rail.gmarketonline.entity.User.carts.{element}.user] 
+2024 -01-11 16:09:59 DEBUG mutation:649 - Static SQL for collection: ru.rail.gmarketonline.entity.User.carts
+2024 -01-11 16:09:59 DEBUG create:34 - Created new SQL alias : c1_0
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.OneToManyTableGroup@30e313d1] with identifierForTableGroup [ru.rail.gmarketonline.entity.Cart.cartItems] for NavigablePath [ru.rail.gmarketonline.entity.Cart.cartItems] 
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [StandardTableGroup(ru.rail.gmarketonline.entity.Cart.cartItems.{element})] with identifierForTableGroup [ru.rail.gmarketonline.entity.Cart.cartItems.{element}] for NavigablePath [ru.rail.gmarketonline.entity.Cart.cartItems.{element}] 
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@1d4d9e0e] with identifierForTableGroup [ru.rail.gmarketonline.entity.Cart.cartItems.{element}.cart] for NavigablePath [ru.rail.gmarketonline.entity.Cart.cartItems.{element}.cart] 
+2024 -01-11 16:09:59 DEBUG create:98 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@26ed65c6] with identifierForTableGroup [ru.rail.gmarketonline.entity.Cart.cartItems.{element}.product] for NavigablePath [ru.rail.gmarketonline.entity.Cart.cartItems.{element}.product] 
+2024 -01-11 16:09:59 DEBUG create:34 - Created new SQL alias : p1_0
+2024 -01-11 16:09:59 DEBUG mutation:649 - Static SQL for collection: ru.rail.gmarketonline.entity.Cart.cartItems
+2024 -01-11 16:09:59 DEBUG SessionFactoryServiceRegistryImpl:91 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2024 -01-11 16:09:59 DEBUG EntityCopyObserverFactoryInitiator:39 - Configured EntityCopyObserver strategy: disallow
+2024 -01-11 16:09:59 DEBUG JtaPlatformInitiator:42 - No JtaPlatform was specified, checking resolver
+2024 -01-11 16:09:59 DEBUG JtaPlatformResolverInitiator:33 - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2024 -01-11 16:09:59 DEBUG StandardJtaPlatformResolver:137 - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024 -01-11 16:09:59 INFO  JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024 -01-11 16:09:59 DEBUG TypeConfiguration$Scope:203 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@a31b64b] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@11f45b84]
+2024 -01-11 16:09:59 DEBUG NamedObjectRepository:234 - Checking 0 named HQL queries
+2024 -01-11 16:09:59 DEBUG NamedObjectRepository:251 - Checking 0 named SQL queries
+2024 -01-11 16:09:59 DEBUG SchemaManagementToolCoordinator:760 - No schema actions specified for contributor `orm`; doing nothing
+2024 -01-11 16:09:59 DEBUG SchemaManagementToolCoordinator:72 - No actions found; doing nothing
+2024 -01-11 16:09:59 DEBUG SessionFactoryRegistry:52 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@c1b7d82
+2024 -01-11 16:09:59 DEBUG SessionFactoryRegistry:74 - Registering SessionFactory: 8232d6ad-4fa4-43ae-a809-7e53ec7c1b63 (<unnamed>)
+2024 -01-11 16:09:59 DEBUG SessionFactoryRegistry:81 - Not binding SessionFactory to JNDI, no JNDI name configured
+2024 -01-11 16:09:59 DEBUG SessionFactoryImpl:311 - Instantiated SessionFactory
+2024 -01-11 16:09:59 INFO  LoginServlet:24 - Entering LoginServlet's doGet method
+2024 -01-11 16:10:00 INFO  LoginServlet:26 - Exiting LoginServlet's doGet method
+2024 -01-11 16:10:13 INFO  LoginServlet:32 - Entering LoginServlet's doPost method
+2024 -01-11 16:10:13 DEBUG StatisticsInitiator:88 - Statistics initialized [enabled=false]
+2024 -01-11 16:10:14 DEBUG hql:75 - HQL : FROM User WHERE email = :email AND password = :password
+2024 -01-11 16:10:14 DEBUG SemanticQueryBuilder:1904 - Handling root path - User
+2024 -01-11 16:10:14 DEBUG SemanticQueryBuilder:1151 - Encountered implicit select clause : FROMUserWHEREemail=:emailANDpassword=:password
+2024 -01-11 16:10:14 DEBUG hql:208 - Unable to resolve unqualified attribute [email] in local from-clause
+2024 -01-11 16:10:14 DEBUG creation:57 - Applying inferable type to SqmExpression [SqmNamedParameter(email)] : null -> BasicSqmPathSource(email : String)
+2024 -01-11 16:10:14 DEBUG hql:208 - Unable to resolve unqualified attribute [password] in local from-clause
+2024 -01-11 16:10:14 DEBUG creation:57 - Applying inferable type to SqmExpression [SqmNamedParameter(password)] : null -> BasicSqmPathSource(password : String)
+2024 -01-11 16:10:14 DEBUG ast:168 - SqmStatement Tree :
+    -> [select]
+      -> [query-spec]
+        -> [select]
+          -> [selection]
+            -> [root] - `ru.rail.gmarketonline.entity.User(37796139383259)`
+            <- [root] - `ru.rail.gmarketonline.entity.User(37796139383259)`
+          <- [selection]
+        <- [select]
+        -> [from]
+          -> [root] - `ru.rail.gmarketonline.entity.User(37796139383259)`
+          <- [root] - `ru.rail.gmarketonline.entity.User(37796139383259)`
+        <- [from]
+        -> [where]
+          -> [and]
+            -> [EQUAL]
+                -> [basic-path] - `ru.rail.gmarketonline.entity.User(37796139383259).email`
+                :email
+            <- [EQUAL]
+            -> [EQUAL]
+                -> [basic-path] - `ru.rail.gmarketonline.entity.User(37796139383259).password`
+                :password
+            <- [EQUAL]
+          <- [and]
+        <- [where]
+      <- [query-spec]
+    <- [select]
+
+2024 -01-11 16:10:15 DEBUG create:34 - Created new SQL alias : u1_0
+2024 -01-11 16:10:15 DEBUG create:98 - Registration of TableGroup [StandardTableGroup(ru.rail.gmarketonline.entity.User(37796139383259))] with identifierForTableGroup [ru.rail.gmarketonline.entity.User] for NavigablePath [ru.rail.gmarketonline.entity.User] 
+2024 -01-11 16:10:15 DEBUG BaseSqmToSqlAstConverter:5718 - Determining mapping-model type for SqmParameter : SqmNamedParameter(email)
+2024 -01-11 16:10:15 DEBUG BaseSqmToSqlAstConverter:5608 - Determining mapping-model type for SqmPath : SqmBasicValuedSimplePath(ru.rail.gmarketonline.entity.User(37796139383259).email) 
+2024 -01-11 16:10:15 DEBUG BaseSqmToSqlAstConverter:5718 - Determining mapping-model type for SqmParameter : SqmNamedParameter(password)
+2024 -01-11 16:10:15 DEBUG BaseSqmToSqlAstConverter:5608 - Determining mapping-model type for SqmPath : SqmBasicValuedSimplePath(ru.rail.gmarketonline.entity.User(37796139383259).password) 
+2024 -01-11 16:10:15 DEBUG AST:70 - DomainResult Graph:
+ \-EntityResultImpl [ru.rail.gmarketonline.entity.User(37796139383259)]
+ |  +-DelayedCollectionFetch [ru.rail.gmarketonline.entity.User(37796139383259).carts]
+ |  +-BasicFetch [ru.rail.gmarketonline.entity.User(37796139383259).email]
+ |  +-BasicFetch [ru.rail.gmarketonline.entity.User(37796139383259).gender]
+ |  +-BasicFetch [ru.rail.gmarketonline.entity.User(37796139383259).password]
+ |  +-BasicFetch [ru.rail.gmarketonline.entity.User(37796139383259).role]
+ |  \-BasicFetch [ru.rail.gmarketonline.entity.User(37796139383259).username]
+
+2024 -01-11 16:10:15 DEBUG tree:46 - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (u1 : ru.rail.gmarketonline.entity.User(37796139383259)) {
+          primaryTableReference : users as u1_0
+        }
+      }
+    }
+
+2024 -01-11 16:10:15 DEBUG exec:455 - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2024 -01-11 16:10:15 DEBUG results:148 - Initializer list
+2024 -01-11 16:10:15 DEBUG results:150 -     ru.rail.gmarketonline.entity.User(37796139383259).carts -> DelayedCollectionInitializer(ru.rail.gmarketonline.entity.User(37796139383259).carts)@2020337276 (PluralAttribute(ru.rail.gmarketonline.entity.User.carts))
+2024 -01-11 16:10:15 DEBUG results:150 -     ru.rail.gmarketonline.entity.User(37796139383259) -> EntityResultInitializer(ru.rail.gmarketonline.entity.User(37796139383259))@850840584 (SingleTableEntityPersister(ru.rail.gmarketonline.entity.User))
+2024 -01-11 16:10:15 DEBUG SQL:133 - 
+    select
+        u1_0.user_id,
+        u1_0.email,
+        u1_0.gender,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+        and u1_0.password=?
+2024 -01-11 16:10:15 DEBUG results:62 - Extracted JDBC value [0] - [2]
+2024 -01-11 16:10:15 DEBUG entity:299 - (EntityResultInitializer) Hydrated EntityKey (ru.rail.gmarketonline.entity.User(37796139383259)): 2
+2024 -01-11 16:10:15 DEBUG results:62 - Extracted JDBC value [0] - [2]
+2024 -01-11 16:10:15 DEBUG collection:84 - (DelayedCollectionInitializer) Current row collection key : ru.rail.gmarketonline.entity.User(37796139383259).carts#2
+2024 -01-11 16:10:15 DEBUG entity:678 - (EntityResultInitializer) Created new entity instance [ru.rail.gmarketonline.entity.User(37796139383259)#2] : 2076576752
+2024 -01-11 16:10:15 DEBUG results:62 - Extracted JDBC value [1] - [user1@example.com]
+2024 -01-11 16:10:15 DEBUG results:62 - Extracted JDBC value [2] - [FEMALE]
+2024 -01-11 16:10:15 DEBUG results:62 - Extracted JDBC value [3] - [password1]
+2024 -01-11 16:10:15 DEBUG results:62 - Extracted JDBC value [4] - [USER]
+2024 -01-11 16:10:15 DEBUG results:62 - Extracted JDBC value [5] - [user1]
+2024 -01-11 16:10:15 DEBUG entity:878 - (EntityResultInitializer) Done materializing entityInstance : ru.rail.gmarketonline.entity.User(37796139383259)#2
+2024 -01-11 16:10:15 DEBUG loading:93 - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@5401dd7b
+2024 -01-11 16:10:15 DEBUG LogicalConnectionManagedImpl:179 - Initiating JDBC connection release from afterTransaction
+2024 -01-11 16:10:15 DEBUG LogicalConnectionManagedImpl:179 - Initiating JDBC connection release from afterTransaction
+2024 -01-11 16:10:15 INFO  LoginServlet:50 - Exiting LoginServlet's doPost method
+2024 -01-11 16:10:15 INFO  UserServlet:19 - Entering UserServlet's doGet method
+2024 -01-11 16:10:15 INFO  UserServlet:30 - Exiting UserServlet's doGet method
+2024 -01-11 16:10:22 DEBUG pooling:376 - Connection pool now considered primed; min-size will be maintained
