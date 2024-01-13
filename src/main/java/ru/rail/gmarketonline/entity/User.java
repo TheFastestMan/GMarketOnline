@@ -23,7 +23,7 @@ public class User implements BaseEntity<Long> {
     private Role role;
     @Enumerated(EnumType.STRING)
     private Gender gender;
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Cart> carts;
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private Cart cart;
 
 }

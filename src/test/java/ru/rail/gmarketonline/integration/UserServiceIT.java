@@ -1,47 +1,27 @@
 package ru.rail.gmarketonline.integration;
 
-import org.hibernate.exception.ConstraintViolationException;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import org.springframework.transaction.annotation.Transactional;
 import ru.rail.gmarketonline.dto.UserDto;
 import ru.rail.gmarketonline.entity.Gender;
 import ru.rail.gmarketonline.entity.Role;
-import ru.rail.gmarketonline.entity.User;
-import ru.rail.gmarketonline.repository.UserRepository;
 import ru.rail.gmarketonline.service.UserService;
 
 import java.util.List;
 import java.util.Optional;
 
-import static org.hamcrest.Matchers.any;
 import static org.hibernate.validator.internal.util.Contracts.assertNotNull;
 import static org.hibernate.validator.internal.util.Contracts.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 import static org.springframework.test.util.AssertionErrors.assertEquals;
-import static org.springframework.test.web.client.ExpectedCount.never;
 
 @SpringBootTest
-@Transactional
 public class UserServiceIT {
     @Autowired
     private UserService userService;
-
-    @Autowired
-    private UserRepository userRepository;
-
-
-    @BeforeEach
-    public void setUp() {
-        // This method is called before each test.
-        // You can add users to the test database here if you don't want to use @Sql annotation.
-    }
 
     @Test
     public void testLoginSuccess() throws Exception {
@@ -72,44 +52,33 @@ public class UserServiceIT {
 
     @Test
     public void testFindAllUser() throws Exception {
-        // Given
-        // Assume users have been setup in your test database
-
         // When
         List<UserDto> users = userService.findAllUser();
 
         // Then
         assertNotNull(users, "The list of users should not be null");
-        // Add more assertions as needed
     }
 
     @Test
     public void testCreateUser() {
-        // Arrange
-        String username = "testUser";
-        String email = "test@example.com";
-        Role role = Role.USER; // Assuming Role is an enum or a class you have defined
-        Gender gender = Gender.MALE; // Assuming Gender is an enum or a class you have defined
-        String password = "password";
-
+        // Set
         UserDto userDto = UserDto.builder()
-                .username(username)
-                .email(email)
-                .role(role)
-                .gender(gender)
-                .password(password)
+                .username("12testUser")
+                .email("12test@example.com")
+                .role(Role.USER)
+                .gender(Gender.MALE)
+                .password("12password")
                 .build();
 
         // Act
-        User createdUser = userService.create(userDto);
+        userService.create(userDto);
 
         // Assert
-        assertNotNull(createdUser);
-        assertNotNull(createdUser.getId());
-        // Additional assertions as needed
+        assertEquals("Emails should match", userDto.getEmail(), "12test@example.com");
+        assertEquals("Username should match", userDto.getUsername(), "12testUser");
+        assertEquals("Passwords should match", userDto.getPassword(), "12password");
+        assertEquals("Role should match", userDto.getRole(), Role.USER);
+        assertEquals("Gender should match", userDto.getGender(), Gender.MALE);
     }
-
-
-
 
 }

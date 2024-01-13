@@ -23,7 +23,7 @@ public class Cart implements BaseEntity<Long> {
     @Column(name = "cart_id")
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", referencedColumnName = "user_id", nullable = false)
     private User user;
 

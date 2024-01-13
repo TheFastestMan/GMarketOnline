@@ -2,96 +2,112 @@ package ru.rail.gmarketonline.integration;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.ArgumentMatchers;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 import ru.rail.gmarketonline.dto.ProductDto;
 import ru.rail.gmarketonline.dto.UserDto;
-import ru.rail.gmarketonline.entity.Gender;
-import ru.rail.gmarketonline.entity.Product;
-import ru.rail.gmarketonline.entity.Role;
-import ru.rail.gmarketonline.entity.User;
+import ru.rail.gmarketonline.entity.*;
 import ru.rail.gmarketonline.repository.CartRepository;
+import ru.rail.gmarketonline.repository.ProductRepository;
+import ru.rail.gmarketonline.repository.UserRepository;
 import ru.rail.gmarketonline.service.CartService;
 
-import static org.hamcrest.Matchers.any;
-import static org.mockito.ArgumentMatchers.eq;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import java.sql.Date;
+import java.util.ArrayList;
+import java.util.Optional;
+
+import static org.hibernate.validator.internal.util.Contracts.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
-@ExtendWith(SpringExtension.class)
 public class CartServiceIT {
     @Autowired
     private CartService cartService;
 
-    @MockBean
-    private ModelMapper modelMapper;
-
-    @MockBean
+    @Autowired
     private CartRepository cartRepository;
 
+    @Autowired
+    private UserRepository userRepository;
+
+    @Autowired
+    private ProductRepository productRepository;
+
+    private User savedUser;
+    private Product savedProduct;
+
     @BeforeEach
-    void setUp() {
-        when(modelMapper.map(any(ProductDto.class), eq(Product.class)))
-                .thenAnswer(invocation -> {
-                    ProductDto dto = invocation.getArgument(0);
-                    Product product = new Product();
-                    product.setId(dto.getId());
-                    product.setProductName(dto.getProductName());
-                    product.setDescription(dto.getDescription());
-                    product.setPrice(dto.getPrice());
-                    return product;
-                });
-        when(modelMapper.map(any(UserDto.class), eq(User.class)))
-                .thenAnswer(invocation -> {
-                    UserDto dto = invocation.getArgument(0);
-                    User user = new User();
-                    user.setUsername(dto.getUsername());
-                    user.setPassword(dto.getPassword());
-                    return user;
-                });
+    public void setUp() {
+        //Set
+        User user = new User();
+        user.setUsername("ast");
+        user.setEmail("ast");
+        user.setPassword("ast");
+        user.setRole(Role.USER);
+        user.setGender(Gender.MALE);
+        savedUser = userRepository.save(user);
+
+        //Set
+        Product product = new Product();
+        product.setProductName("ast");
+        product.setDescription("ast");
+        product.setPrice(19.0);
+        product.setQuantity(100);
+        savedProduct = productRepository.save(product);
+
+        //Set
+        Cart cart = new Cart();
+        cart.setUser(savedUser);
+        cart.setCreatedAt(new Date(System.currentTimeMillis()));
+
+        // If Cart doesn't initialize its cartItems list, do it here
+        cart.setCartItems(new ArrayList<>());
+        Cart savedCart = cartRepository.save(cart);
+
+        // Create and add an existing CartItem to the Cart
+        CartItem existingCartItem = new CartItem();
+        existingCartItem.setCart(savedCart);
+        existingCartItem.setProduct(savedProduct);
+        existingCartItem.setQuantity(2);
+
+        // Add the CartItem directly to the cartItems list
+        savedCart.getCartItems().add(existingCartItem);
+
+        // Save the cart again with the new item added
+        cartRepository.save(savedCart);
     }
 
     @Test
-    void addProductToCartTest() throws Exception {
-        // Declare and initialize necessary variables for UserDto
-        Long userId = 1L; // Example ID
-        String username = "testUser";
-        String password = "password123";
-        Role role = Role.USER; // Replace with actual Role enum value
-        Gender gender = Gender.MALE; // Replace with actual Gender enum value
-        String email = "test@example.com"; // Declare the email variable
-
-        // Assuming UserDto has a builder pattern
+    public void testAddProductToCart() throws Exception {
+        //Set
         UserDto userDto = UserDto.builder()
-                .id(userId)
-                .username(username)
-                .password(password)
-                .role(role)
-                .gender(gender)
-                .email(email)
+                .id(savedUser.getId())
+                .username(savedUser.getUsername())
+                .email(savedUser.getEmail())
+                .role(savedUser.getRole())
+                .gender(savedUser.getGender())
+                .password(savedUser.getPassword())
                 .build();
 
-        // Create ProductDto instance (if required)
-        // Assuming ProductDto has similar fields or a builder pattern
-        ProductDto productDto = new ProductDto(); // Initialize appropriately
+        //Set
+        ProductDto productDto = ProductDto.builder()
+                .id(savedProduct.getId())
+                .productName(savedProduct.getProductName())
+                .description(savedProduct.getDescription())
+                .price(savedProduct.getPrice())
+                .quantity(savedProduct.getQuantity())
+                .build();
 
-        int quantity = 1;
+        //Add product to cart
+        cartService.addProductToCart(userDto, productDto, 1);
 
-        cartService.addProductToCart(userDto, productDto, quantity);
-
-        // Using Option 1 or Option 2
-        cartService.addProductToCart(userDto, productDto, quantity);
-
-        // Corrected verify call
-        verify(cartRepository).addProductToCart(ArgumentMatchers
-                .any(User.class), ArgumentMatchers.any(Product.class), eq(quantity));
+        // Assert
+        Optional<Cart> cartOptional = cartRepository.findCartForUser(savedUser);
+        assertTrue(cartOptional.isPresent(), "Cart should be present");
+        Cart cart = cartOptional.get();
+        assertEquals(2, cart.getCartItems().size(), "Cart should have 2 items after adding a new one");
+        CartItem addedCartItem = cart.getCartItems().get(1);
+        assertEquals(savedProduct.getId(), addedCartItem.getProduct().getId(), "Product in cart should match");
+        assertEquals(1, addedCartItem.getQuantity(), "Quantity should match");
     }
-
-
 }

@@ -4,11 +4,13 @@ import lombok.extern.log4j.Log4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.rail.gmarketonline.dto.ProductDto;
 import ru.rail.gmarketonline.dto.UserDto;
 import ru.rail.gmarketonline.entity.Product;
 import ru.rail.gmarketonline.entity.User;
 import ru.rail.gmarketonline.repository.CartRepository;
+
 @Log4j
 @Service
 public class CartService {
@@ -38,6 +40,7 @@ public class CartService {
         return user;
     }
 
+    @Transactional
     public void addProductToCart(UserDto userDto, ProductDto productDto, int quantity) throws Exception {
         log.info("Cart service enters into addProductToCart");
         User user = convertUserDtoToUser(userDto);

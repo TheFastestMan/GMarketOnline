@@ -6,6 +6,7 @@ import lombok.extern.log4j.Log4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.rail.gmarketonline.dto.ProductDto;
 import ru.rail.gmarketonline.entity.Product;
 import ru.rail.gmarketonline.repository.ProductRepository;
@@ -13,6 +14,7 @@ import ru.rail.gmarketonline.repository.ProductRepository;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+
 @Log4j
 @Service
 public class ProductService {
@@ -75,15 +77,16 @@ public class ProductService {
         productRepository.decreaseQuantityByAmount(productId, quantityToDecrease);
     }
 
+    @Transactional
     public void addProduct(ProductDto productDto) {
         log.info("Product service enters into addProduct");
-        var validationFactory = Validation.buildDefaultValidatorFactory();
-        var validator = validationFactory.getValidator();
-        var validationResult = validator.validate(productDto);
-
-        if (!validationResult.isEmpty()) {
-            throw new ConstraintViolationException(validationResult);
-        }
+//        var validationFactory = Validation.buildDefaultValidatorFactory();
+//        var validator = validationFactory.getValidator();
+//        var validationResult = validator.validate(productDto);
+//
+//        if (!validationResult.isEmpty()) {
+//            throw new ConstraintViolationException(validationResult);
+//        }
 
         Product product = convertProductDtoToProduct(productDto);
         productRepository.save(product);

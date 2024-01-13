@@ -11,7 +11,7 @@ CREATE TABLE users
 CREATE TABLE carts
 (
     cart_id    BIGSERIAL PRIMARY KEY,
-    user_id    BIGINT REFERENCES users (user_id) NOT NULL,
+    user_id    BIGINT UNIQUE REFERENCES users (user_id) NOT NULL,
     created_at TIMESTAMP DEFAULT current_timestamp
 );
 CREATE TABLE products

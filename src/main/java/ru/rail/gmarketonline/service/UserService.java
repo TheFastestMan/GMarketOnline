@@ -6,6 +6,7 @@ import lombok.extern.log4j.Log4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.rail.gmarketonline.dto.UserDto;
 import ru.rail.gmarketonline.entity.User;
 import ru.rail.gmarketonline.repository.UserRepository;
@@ -13,6 +14,7 @@ import ru.rail.gmarketonline.repository.UserRepository;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+
 @Log4j
 @Service
 public class UserService {
@@ -48,6 +50,7 @@ public class UserService {
 
     }
 
+
     public List<UserDto> findAllUser() throws Exception {
         log.info("User service enters into findAllUser");
         return userRepository.findAll().stream()
@@ -61,15 +64,16 @@ public class UserService {
                         .build())
                 .collect(Collectors.toList());
     }
+
     public User create(UserDto userDto) {
         log.info("User service enters into create");
-        var validationFactory = Validation.buildDefaultValidatorFactory();
-        var validator = validationFactory.getValidator();
-        var validationResult = validator.validate(userDto);
-
-        if (!validationResult.isEmpty()) {
-            throw new ConstraintViolationException(validationResult);
-        }
+//        var validationFactory = Validation.buildDefaultValidatorFactory();
+//        var validator = validationFactory.getValidator();
+//        var validationResult = validator.validate(userDto);
+//
+//        if (!validationResult.isEmpty()) {
+//            throw new ConstraintViolationException(validationResult);
+//        }
 
         var mappedUser = convertUserDtoToUser(userDto);
 

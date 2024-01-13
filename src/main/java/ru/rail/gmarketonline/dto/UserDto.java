@@ -17,6 +17,7 @@ import ru.rail.gmarketonline.entity.Role;
 @ToString
 public class UserDto {
     private Long id;
+
     @NotEmpty(message = "Name should not be empty")
     private String username;
 
